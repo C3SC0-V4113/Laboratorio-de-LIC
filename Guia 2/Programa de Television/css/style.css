@@ -1,0 +1,46 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: #43a047;
+    color: white;
+}
+header{
+    text-align: center;
+}
+article{
+    background-color: #2e7d32;
+    color: white;
+    text-align: justify;
+}
+h1{
+    font-weight: bold;
+}
+#titulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font: large;
+    font-size: 50px;
+}
+footer{
+    text-align: end;
+}
+#creditos{
+    font-size: 12px;
+}
+blockquote{
+    text-align: center;
+    font-style: italic;
+}
+cite{
+    font-style: oblique;
+}
+img{
+    display: block;
+    margin: auto;
+}
+#imagenes{
+    display: block;
+}
+#familia{
+    display: inline-block;
+}
