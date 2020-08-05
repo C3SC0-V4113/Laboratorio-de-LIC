@@ -39,8 +39,22 @@ img{
     margin: auto;
 }
 #imagenes{
-    display: block;
+    max-width: 100%;
 }
 #familia{
+    border: 1px solid #43a047 ;
+    box-sizing: border-box;
+    color: #2e7d32;
     display: inline-block;
+    padding: 1em;
+    vertical-align: middle;
+    width: 31.9%;
+}
+#text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+#panoramica{
+    max-width: 100%;
 }
