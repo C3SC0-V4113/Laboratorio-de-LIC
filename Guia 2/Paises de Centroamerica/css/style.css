@@ -4,11 +4,16 @@
 header
 {
     text-align: center;
+    background-color: #81d4fa;
 }
 footer
 {
     text-align: end;
     font-size: 12px;
+    background-color: #039be5;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
 }
 ul
 {
@@ -16,7 +21,7 @@ ul
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    background-color: #333333;
+    background-color: #0277bd;
 }
 li
 {
@@ -32,5 +37,63 @@ li a
 }
 li a:hover
 {
-    background-color: #111111;
+    background-color: #01579b;
+}
+.inicio
+{
+    background-color: #039be5;
+}
+
+aside
+{
+    box-sizing: border-box;
+    text-align: justify;
+    width: 30%;
+    padding-left: 25px;
+    margin-left: 25px;
+    float: right;
+    background-color: #03a9f4;
+}
+.text
+{
+    width: 70%;
+}
+body
+{
+    background-color: #81d4fa;
+}
+img
+{
+    max-width: 75%;
+}
+div
+{
+    text-align: center;
+    border: 1px solid #111111 ;
+    box-sizing: border-box;
+    color: #111111;
+    background-color: white;
+    float: left;
+    padding: 1em;
+    margin: 0.5%;
+    vertical-align: middle;
+    width: 32.3%;
+}
+.Turo
+{
+    object-fit: cover;
+}
+h1
+{
+    font-weight: bold;
+    font-size: 50px;
+}
+article
+{
+    display: block;
+    text-align: center;
+}
+article p
+{
+    font-family: Arial, Helvetica, sans-serif;
 }
