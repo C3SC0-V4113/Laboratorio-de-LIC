@@ -4,13 +4,14 @@
 header
 {
     text-align: center;
-    background-color: #81d4fa;
+    background-color: #009688;
 }
 footer
 {
+    color: white;
     text-align: end;
     font-size: 12px;
-    background-color: #039be5;
+    background-color: #00796b;
     width: 100%;
     left: 0px;
     bottom: 0px;
@@ -21,7 +22,7 @@ ul
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    background-color: #0277bd;
+    background-color: #00796b;
 }
 li
 {
@@ -37,62 +38,48 @@ li a
 }
 li a:hover
 {
-    background-color: #01579b;
+    background-color: #00695c;
 }
 .inicio
 {
-    background-color: #039be5;
+    background-color: #004d40 ;
 }
-
 aside
 {
     box-sizing: border-box;
-    text-align: justify;
+    text-align: center;
     width: 30%;
     padding-left: 15px;
     margin-left: 25px;
     float: right;
-    background-color: #03a9f4;
-}
-.text
-{
-    width: 70%;
+    background-color: #1de9b6;
+    line-height: 6px;
 }
 body
 {
-    background-color: #81d4fa;
+    background-color: #69f0ae;
 }
 img
 {
     max-width: 75%;
-}
-div
-{
-    text-align: center;
-    box-sizing: border-box;
-    color: #111111;
-    background-color: white;
-    float: left;
-    padding: 1em;
-    margin: 0.5%;
-    vertical-align: middle;
-    width: 32.3%;
-}
-.Turo
-{
-    object-fit: cover;
 }
 h1
 {
     font-weight: bold;
     font-size: 50px;
 }
-article
+aside p,h4
 {
-    display: block;
-    text-align: center;
+    font-size: 15px;
 }
-article p
+blockquote
 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+section
+{
+    box-sizing: border-box;
+    text-align: justify;
+    width: 70%;
+    line-height: 25px;
 }
