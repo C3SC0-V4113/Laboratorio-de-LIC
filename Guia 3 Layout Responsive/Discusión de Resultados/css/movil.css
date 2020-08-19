@@ -11,7 +11,7 @@ nav ul li{
     float: left;
     margin: 0px -15px;
     padding: 10px 0px 0px 0px;
-    border-top: solid 2px white;
+    border-top: solid 2px #E32D38;
     border-bottom: solid 2px white;
 }
 nav ul li a{
@@ -23,23 +23,9 @@ nav ul li a{
     transition: color 1s,transform 3s;
 }
 nav ul li a:hover{
-    color: #AAA;
+    color: #E32D38;
     transform: scale(1.3);
 }
-/*
-nav ul li a#inicio{
-    background: url(../img/turismo/home.png) no-repeat 0px 3px;
-    padding-left: 40px;
-}
-nav ul li a#planes{
-    background: url(../img/turismo/planes.png) no-repeat 0px 3px;
-    padding-left: 40px;
-}
-nav ul li a#galeria{
-    background: url(../img/turismo/galeria.png) no-repeat 0px 3px;
-    padding-left: 40px;
-}
-*/
 /*PARTE SUPERIOR*/
 #encabezado{
     margin: 0px auto;
@@ -76,9 +62,10 @@ nav ul li a#galeria{
     overflow: auto;
 }
 .plan{
+    display: block;
     width: 92%;
-    padding: 10px 2%;
-    margin: 20px 1%;
+    padding: 5%;
+    margin: 2%;
     background-color: white;
     border: solid 1px black;
     border-radius: 10px;
@@ -91,7 +78,7 @@ nav ul li a#galeria{
 /*CONTENIDO DE LA PAGIN PLANES*/
 .planes{
     width: 94%;
-    background: white;
+    background: #E32D38;
     padding: 1% 3%;
 }
 .planes img{
@@ -101,12 +88,13 @@ nav ul li a#galeria{
 .planes h1{
     text-align: left;
     font-size: 1.5em;
+    color: white;
 }
-.planes.precio{
+.planes p{
     font-size: 1.1em;
     margin: 20px 0px 5px;
     padding-bottom: 15px;
-    border-bottom: solid 2px grey;
+    border-bottom: solid 2px white;
     font-weight: bold;
 }
 /*CONTENIDO DE LA PAGINA GALERIA*/

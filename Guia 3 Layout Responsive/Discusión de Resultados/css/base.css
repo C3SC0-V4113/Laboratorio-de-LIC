@@ -6,8 +6,8 @@
     padding: 0;
 }
 body{
-    background-color: #BBB;
-    color: #444444;
+    background-color: white;
+    color: black;
 }
 h1{
     font-size: 1.3em;
@@ -18,8 +18,8 @@ h1{
 /*PARTE SUPERIOR*/
 #superior{
     width: 100%;
-    padding: 2% 0px;
-    background-color: #464d52;
+    /*padding: 2% 0px;*/
+    background-color: black;
 }
 
 /*PIE DE LA PAGINA*/
@@ -51,7 +51,7 @@ footer{
 }
 .boton a{
     text-decoration: none;
-    color: white;
+    color: #E32D38;
     width: 100%;
     margin: 0px;
     display: block;
