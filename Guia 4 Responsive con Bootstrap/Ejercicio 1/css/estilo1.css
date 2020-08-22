@@ -1,0 +1,16 @@
+/*Estilizando las filas*/
+.row{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+/*Estilizando los div cuya clase comience con "col"*/
+div[class^="col-"]{
+    border: 1px solid #aaaaaa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+}
+/*Para celulares (prefijo xs) el color de fondo será gris*/
+body{
+    background-color: #B0BEC5;
+}
