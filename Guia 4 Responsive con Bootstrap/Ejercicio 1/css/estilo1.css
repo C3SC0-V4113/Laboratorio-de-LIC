@@ -14,3 +14,23 @@ div[class^="col-"]{
 body{
     background-color: #B0BEC5;
 }
+/*Para tablets (prefijo sm) el fondo será naranja*/
+@media (min-width: 768px){
+    body{
+        background-color: #FFB74D;
+    }
+}
+/*Para computadoras con un ancho menor a 1200px (prefijo md)
+ el color de fondo será verde*/
+ @media (min-width: 992px){
+    body{
+        background-color: #81C784;
+    }
+}
+/*Para computadoras con un ancho mayot o igual a 1200px (prefijo lg)
+ el color de fondo será azul*/
+ @media (min-width: 1200px){
+    body{
+        background-color: #5C6BC0;
+    }
+}
