@@ -1,0 +1,36 @@
+/*Estilizando las filas*/
+.row{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+/*Estilizando los div cuya clase comience con "col"*/
+div[class^="col-"]{
+    border: 1px solid #aaaaaa;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+}
+/*Para celulares (prefijo xs) el color de fondo será gris*/
+body{
+    background-color: #B0BEC5;
+}
+/*Para tablets (prefijo sm) el fondo será naranja*/
+@media (min-width: 768px){
+    body{
+        background-color: #FFB74D;
+    }
+}
+/*Para computadoras con un ancho menor a 1200px (prefijo md)
+ el color de fondo será verde*/
+ @media (min-width: 992px){
+    body{
+        background-color: #81C784;
+    }
+}
+/*Para computadoras con un ancho mayot o igual a 1200px (prefijo lg)
+ el color de fondo será azul*/
+ @media (min-width: 1200px){
+    body{
+        background-color: #5C6BC0;
+    }
+}
