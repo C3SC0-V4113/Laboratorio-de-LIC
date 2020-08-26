@@ -1,0 +1,35 @@
+body{
+    background-color: #0000ff;
+    color: #ffff00;
+    text-align: justify;
+}
+.centrados{
+    text-align: center;
+}
+#Titulo{
+    font-family: Rockwell;
+    text-decoration: underline;
+    color: #ffff00;
+}
+hr{
+    border: 1px solid red;
+}
+h1{
+    color: #FF0066;
+}
+h3{
+    font-style: italic;
+}
+p{
+    font-size: 18px;
+    font-family: Book antiSqua;
+}
+#texto_grande{
+    font-size: 47px;
+    font-family: Baskerville Old Face;
+    color: #A9F5F2;
+}
+#dios{
+    font-style: italic;
+    font-size: larger;
+}
