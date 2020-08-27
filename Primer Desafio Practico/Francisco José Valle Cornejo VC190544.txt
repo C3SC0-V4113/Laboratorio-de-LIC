@@ -1,0 +1,5 @@
+-Use bootstrap 3 por medio de enlace además de una hoja de estilos propia
+-Faltaba una imagen de decoracion, asi que use la misma imagen para los dos adornos
+Enlace de GitHub:
+https://github.com/C3SC0-V4113/Laboratorio-de-LIC.git
+(Es privado, no se si funcione el enlace realmente xd)
