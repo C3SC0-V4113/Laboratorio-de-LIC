@@ -1,0 +1,108 @@
+body{
+    background-image: url(/img/bg.png);
+}
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{
+    letter-spacing: 2px;
+    color: red;
+}
+h3{
+    text-align: center;
+}
+/*Estilizando los div cuya clase comience con "col"*/
+
+.img-encabezado{
+    width: 100%;
+    position: sticky;
+}
+#rojas{
+    color: red;
+}
+ul{
+    list-style: none;
+    list-style-type: none;
+    margin: 0px;
+}
+.botones-sidebar{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+#nosup{
+    border-top: none;
+}
+#perfiles{
+    width: 100%;
+}
+.Contenedor-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.img-responsiva{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.letras-logo{
+    margin-left: auto;
+    margin-right: auto;
+}
+#Barra-Nav{
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 5%;
+}
+.container{
+    margin-top: 20px;
+}
+@media screen and (min-width: 481px){
+    #contenido{
+        margin-top: 50px ;
+    }
+}
+@media screen and (max-width: 480px){
+    .letras-logo{
+        width: 146px;
+        height: 67px;
+        background-image: url(/img/logo.png);
+        position: absolute;
+        top: 40%;
+        left: 35%;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .letras-logo{
+        width: 146px;
+        height: 67px;
+        background-image: url(/img/logo.png);
+        position: absolute;
+        top: 40%;
+        left: 40%;
+    }
+}
+@media screen and (min-width:769px) and (max-width:991px){
+    .letras-logo{
+        width: 146px;
+        height: 67px;
+        background-image: url(/img/logo.png);
+        position: absolute;
+        top: 40%;
+        left: 40%;
+    }
+}
+@media screen and (min-width:992px){
+    .letras-logo{
+        width: 146px;
+        height: 67px;
+        background-image: url(/img/logo.png);
+        position: absolute;
+        top: 40%;
+        left: 32%;
+    }
+}
