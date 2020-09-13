@@ -34,7 +34,7 @@ body {
     /* background: url(../img/paint.png) repeat, white; */
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
     -webkit-animation-name: masked-animation;
     animation-name: masked-animation;
     -webkit-animation-duration: 40s;
@@ -48,7 +48,7 @@ body {
     background-clip: text;
 }
 
-@-webkit-keyframes masked-animation {
+@keyframes masked-animation {
     0% {background-position: left bottom;}
     100% {background-position: right bottom;}
 }
