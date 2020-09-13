@@ -6,15 +6,14 @@ num = parseInt(prompt("¿Cuántos notas va a ingresar?",""));
 nota = 0;
 header = "<header class=\"masked\">";
 header += "<h1>Selectable Text</h1>";
-header += "</haeder>";
+header += "</header>";
 document.write(header);
 //Ciclo o lazo que permitirá ingresar cada nota
 document.write("<section>");
 document.write("<article>");
 for (i=1;i<=num;i++){
  notaactual = parseFloat(prompt("Ingrese la nota " + i + ": ",""));
-document.write("<h3>La nota " + i + ": " + Math.round(notaactual * Math.pow(10,2)) /
-Math.pow(10,2) + "</h3>");
+document.write("<h3>La nota " + i + ": " + Math.round(notaactual * Math.pow(10,2))/Math.pow(10,2) + "</h3>");
  nota += notaactual;
 }
 //Obteniendo el cálculo del promedio
