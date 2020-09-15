@@ -17,7 +17,6 @@ function inicializar(){
             alert('El arreglo debe ser de dimensión 2 o superior');
         }
     }while(isNaN(max)||max<2);
-    Reverser();
     //Lazo para solicitar el ingreso de los elementos del arreglo
     for (i = 0; i < max; i++) {
         numeros[i]=parseInt(prompt("Número "+(parseInt(i)+1),""));
@@ -25,7 +24,6 @@ function inicializar(){
     ActualizarArray();
     //Capturando los elementos con clase Off
     tdelement=document.getElementsByClassName('Off');
-    alert(tdelement.length);
     for (var i = 0; i < tdelement.length; i++) {
         tdelement[i].onmouseover=function(){
             this.className='On';
@@ -36,15 +34,6 @@ function inicializar(){
     }
 }
 
-function Reverser(){
-    var form=document.getElementById('formPush');
-    form.onsubmit=function(){
-        var reversible=numeros.reverse();
-    }
-    console.log(reversible);
-    ActualizarArray();
-}
-
 function ActualizarArray(){
     console.log('Empezando Actualización');
     var contenido="";
@@ -52,7 +41,16 @@ function ActualizarArray(){
     generado dinámicamente desde JavaScript */
     var datos=document.getElementById('datos');
     with(document){
-        contenido+="<h1>Números ingresados</h1>\n";
+        contenido+="<h1>Números ingresados (Arreglo sin modificar)</h1>\n";
+        //Lazo para ingresar los elementos ingresados en el arreglo
+        contenido += "<table>\n\t<tbody>\n\t\t<tr>\n";
+        //Lazo que muestra los elementos del arreglo en una tabla
+        for ( i = 0; i < numeros.length; i++) {
+            contenido += "\t\t\t<td class=\"Off\">" + numeros[i] + "</td>\n";            
+        }
+        contenido += "\t\t</tr>\n\t</tbody>\n</table>\n<br />\n\n";
+        numeros.reverse();
+        contenido+="<h1>Arreglo Aplicando reversible()</h1>\n";
         //Lazo para ingresar los elementos ingresados en el arreglo
         contenido += "<table>\n\t<tbody>\n\t\t<tr>\n";
         //Lazo que muestra los elementos del arreglo en una tabla

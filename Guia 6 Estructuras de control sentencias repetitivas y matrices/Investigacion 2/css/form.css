@@ -1,0 +1,28 @@
+input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family:"Century Gothic";
+  font-size: 1em;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color:LightBlue;
+  border:double 3px SlateBlue;
+  color:SteelBlue;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 75%;
+  font-family:"Century Gothic";
+  font-size:1.5em;
+  font-weight:600;
+}
+#design{
+    text-align: center;
+}
+fieldset{
+  border: none;
+  text-align: center;
+}
