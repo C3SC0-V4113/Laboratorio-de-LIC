@@ -1,0 +1,22 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    text-align: center;
+    background-color: #006064;
+    color: white;
+}
+body{
+    background-color: #18ffff;
+    color: black;
+}
+article{
+    align-content: center;
+}
+form{
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #666666;
+    width: 500px;
+}

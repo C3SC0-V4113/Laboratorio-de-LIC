@@ -1,0 +1,109 @@
+;
+; AavmKbd
+;
+; Copyright (c) 2013 ALWIL Software
+;
+
+[Version]
+Signature   ="$Windows NT$"
+Provider    =%Msft%
+ClassGUID   ={4D36E96B-E325-11CE-BFC1-08002BE10318}
+Class       =Keyboard
+CatalogFile =aswKbd.cat
+DriverVer   =06/26/2014
+
+[DestinationDirs]
+DefaultDestDir   = 12
+
+;
+; Driver information
+;
+
+[Manufacturer]
+%Msft%   = Msft.Mfg, NTamd64
+
+[Msft.Mfg]
+%Msft% = aswKbd, *PNP0BAAD
+
+[Msft.Mfg.NTamd64]
+%Msft% = aswKbdamd64, *PNP0BAAD
+
+;
+; General installation section
+;
+
+[aswKbdamd64]
+Include=keyboard.inf
+Needs=STANDARD_Inst
+CopyFiles=aswKbd.DriverFiles
+
+[aswKbd]
+Include=keyboard.inf
+Needs=STANDARD_Inst
+CopyFiles=aswKbd.DriverFiles
+
+;
+; File sections
+;
+
+[aswKbd.DriverFiles]
+aswKbd.sys
+
+[SourceDisksNames]
+1 = %aswKbd.SvcDesc%,,,
+
+[SourceDisksFiles.x86]
+; filename_on_source = diskID[, [subdir][, size]]
+aswKbd.sys   = 1, .\x86
+
+[SourceDisksFiles.amd64]
+aswKbd.sys   = 1, .\x64
+
+;
+; Service Installation
+;
+
+[aswKbd.Services]
+AddService = aswKbd,  , aswKbd_Service_Inst
+Include=keyboard.inf
+Needs=STANDARD_Inst.Services
+
+[aswKbdamd64.Services]
+AddService = aswKbd,  , aswKbd_Service_Inst
+Include=keyboard.inf
+Needs=STANDARD_Inst.Services
+
+[aswKbd_Service_Inst]
+DisplayName    = %aswKbd.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 1                  ; SERVICE_DEMAND_START=3, SERVICE_SYSTEM_START=1
+ErrorControl   = 0                  ; SERVICE_ERROR_IGNORE
+LoadOrderGroup = Keyboard Port
+ServiceBinary  = %12%\aswKbd.sys
+
+[aswKbd.HW]
+AddReg = aswKbd.HW.AddReg
+Include=keyboard.inf
+Needs=STANDARD_Inst.HW
+
+[aswKbdamd64.HW]
+AddReg = aswKbd.HW.AddReg
+Include=keyboard.inf
+Needs=STANDARD_Inst.HW
+
+[aswKbd.HW.AddReg]
+HKR,,"UpperFilters",0x00010000,"aswKbd"
+
+[Strings]
+REG_SZ         = 0x00000000
+REG_MULTI_SZ   = 0x00010000
+REG_EXPAND_SZ  = 0x00020000
+REG_BINARY     = 0x00000001
+REG_DWORD      = 0x00010001
+SERVICEROOT    = "System\CurrentControlSet\Services"
+
+;
+; Localizable Strings
+;
+
+Msft = "AVAST Software

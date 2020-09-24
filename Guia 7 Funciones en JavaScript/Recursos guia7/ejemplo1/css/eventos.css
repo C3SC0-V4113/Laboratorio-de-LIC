@@ -1,0 +1,213 @@
+*               {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    /* Old browsers */
+    background: #e4efc0; 
+    /* FF3.6+ */
+    background: -moz-radial-gradient(center, ellipse cover, #e4efc0 0%, #abbd73 100%); 
+    /* Chrome,Safari4+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#e4efc0), color-stop(100%,#abbd73)); 
+    /* Chrome10+,Safari5.1+ */
+    background: -webkit-radial-gradient(center, ellipse cover, #e4efc0 0%,#abbd73 100%); 
+    /* Opera 12+ */
+    background: -o-radial-gradient(center, ellipse cover, #e4efc0 0%,#abbd73 100%); 
+    /* IE10+ */
+    background: -ms-radial-gradient(center, ellipse cover, #e4efc0 0%,#abbd73 100%); 
+    /* W3C */
+    background: radial-gradient(ellipse at center, #e4efc0 0%,#abbd73 100%); 
+    /* IE6-9 fallback on horizontal gradient */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4efc0', endColorstr='#abbd73',GradientType=1 ); 
+}
+
+h1              {
+    background-color:#73C6E0;
+    border:outset 6px #5BB02F;
+    color:Indigo;
+    font-family:"Bodoni MT Black",Modern;
+    font-style:normal;
+    font-weight:Bold;
+    font-size:1.8em;
+    margin: 16px auto;
+    padding: 9px 12px;
+    text-align:center;
+    text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+    width:40%;
+}
+
+ul#frmfechas {
+    list-style: none;
+}
+
+ul#frmfechas li {
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    width: 92%;
+}
+
+ul#frmfechas li.buttons {
+    clear: both;
+    width: 30%;
+}
+
+fieldset        {
+    background-color:#73C6E0;
+    border:solid 1px Green; 
+    -webkit-box-shadow: 5px 5px 3px 3px #405C37;
+    -moz-box-shadow: 5px 5px 3px 3px #405C37;
+    -ms-box-shadow: 5px 5px 3px 3px #405C37;
+    -o-box-shadow: 5px 5px 3px 3px #405C37;
+    box-shadow: 5px 5px 3px 3px #405C37;
+    color:DarkGreen;
+    font:800 0.8em Arial,"Helvetica Neue","Liberation Sans";
+    margin:12px auto;
+    padding:3px;
+    width:40%;
+}
+
+legend          {
+    background-color:#EC96A9;
+    border: 1px solid #5BB03F;
+    color:Indigo;
+    font-weight:bold;
+    font-variant:small-caps;
+    margin-bottom:8px;
+    padding:2px 5px;
+}
+
+label           {
+    display:block;
+    float:left;
+    font-size:0.9em;
+    font-weight:800;
+    line-height:normal;
+    margin-right:10px;
+    position:relative;
+    text-align:right;
+}
+
+input[type="text"]           {
+    display: block;
+    float: right;
+    right: 0;
+}
+
+input.formInputText {
+    background-color:Plum;
+    border:solid 1px Indigo;
+    color:DarkGreen;
+    font-size:0.8em;
+    height:15px;
+    padding:2px;
+    margin-right:5px;
+    margin-bottom:5px;
+}
+
+input.formInputText:hover {
+    background-color:rgb(160,225,60);
+    border:groove 2px OrangeRed;
+    color:BlueViolet;
+}
+
+input.formInputText:focus {
+    background-color:PaleGoldenrod;
+    border:solid 2px Indigo;
+    color:DarkGreen;
+}
+
+#labelcheckboxes, #checkboxes {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#checkboxes span {
+    font-size: 0.9em;
+}
+
+input.formInputCheck      {
+    background-color:Plum;
+    border:solid 1px Indigo;
+    height:15px;
+}
+
+select {
+    display: block;
+    float: right;
+    right: 0;
+}
+
+select.seloptions         {
+    background-color:Plum;
+    font-size:0.8em;
+    color:DarkGreen;
+    cursor:pointer;
+    padding:2px;
+    border:solid 1px Indigo;
+    margin-right:5px;
+    margin-bottom:5px;
+}
+
+select.seloptions:hover   {
+    background-color:rgb(160,225,60);
+    border:groove 2px OrangeRed;
+    color:BlueViolet;
+}
+
+select.seloptions:focus   {
+    color:DarkGreen;
+    background-color:PaleGoldenrod;
+    border:solid 2px Indigo;
+}
+
+input.formInputButton     {
+    background: rgba(33,24,102,1);
+    background: -moz-linear-gradient(left, rgba(33,24,102,1) 0%, rgba(59,36,171,0.97) 51%, rgba(23,18,168,0.95) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(33,24,102,1)), color-stop(51%, rgba(59,36,171,0.97)), color-stop(100%, rgba(23,18,168,0.95)));
+    background: -webkit-linear-gradient(left, rgba(33,24,102,1) 0%, rgba(59,36,171,0.97) 51%, rgba(23,18,168,0.95) 100%);
+    background: -o-linear-gradient(left, rgba(33,24,102,1) 0%, rgba(59,36,171,0.97) 51%, rgba(23,18,168,0.95) 100%);
+    background: -ms-linear-gradient(left, rgba(33,24,102,1) 0%, rgba(59,36,171,0.97) 51%, rgba(23,18,168,0.95) 100%);
+    background: linear-gradient(to right, rgba(33,24,102,1) 0%, rgba(59,36,171,0.97) 51%, rgba(23,18,168,0.95) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211866', endColorstr='#1712a8', GradientType=1 );
+    border:solid 1px DarkGreen;
+    color:Orange;
+    cursor:pointer;
+    float:right;
+    font-size:1.2em;
+    font-weight:800;
+    padding:3px 5px;
+    text-align:center;
+    vertical-align:middle;
+    width: 100%;
+}
+
+input.formInputButton:hover {
+    background: rgba(240,131,48,1);
+    background: -moz-linear-gradient(left, rgba(240,131,48,1) 0%, rgba(255,153,0,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240,131,48,1)), color-stop(100%, rgba(255,153,0,1)));
+    background: -webkit-linear-gradient(left, rgba(240,131,48,1) 0%, rgba(255,153,0,1) 100%);
+    background: -o-linear-gradient(left, rgba(240,131,48,1) 0%, rgba(255,153,0,1) 100%);
+    background: -ms-linear-gradient(left, rgba(240,131,48,1) 0%, rgba(255,153,0,1) 100%);
+    background: linear-gradient(to right, rgba(240,131,48,1) 0%, rgba(255,153,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f08330', endColorstr='#ff9900', GradientType=1 );
+    color:Indigo;
+}
+
+input.formInputButton:active{
+    background: rgba(180,201,62,1);
+    background: -moz-linear-gradient(left, rgba(180,201,62,1) 0%, rgba(133,181,0,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(180,201,62,1)), color-stop(100%, rgba(133,181,0,1)));
+    background: -webkit-linear-gradient(left, rgba(180,201,62,1) 0%, rgba(133,181,0,1) 100%);
+    background: -o-linear-gradient(left, rgba(180,201,62,1) 0%, rgba(133,181,0,1) 100%);
+    background: -ms-linear-gradient(left, rgba(180,201,62,1) 0%, rgba(133,181,0,1) 100%);
+    background: linear-gradient(to right, rgba(180,201,62,1) 0%, rgba(133,181,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4c93e', endColorstr='#85b500', GradientType=1 );
+    color:Indigo;
+}

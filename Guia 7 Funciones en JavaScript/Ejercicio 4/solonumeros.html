@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máscaras del teclado</title>
+    <link rel="stylesheet" async href="http://fonts.googleapis.com/css?family=Francois%20One" data-generated="http://enjoycss.com">
+    <link rel="stylesheet" href="css/pure-min.css">
+    <script src="js/filternumber.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-3d">El campo solo acepta números</h1>
+    </header>
+    <section>
+        <article>
+            <form action="javascript:void(0)" name="frmmask" class="pure-form">
+                <fieldset class="pure-group">
+                    <label for="serialnumber">Número de serie:</label>
+                    <input type="number" name="serialnumber" id="txtserial" class="pure-input-1-2" placeholder="Número de serie" onkeypress="return numbersOnly(this, event)">
+                </fieldset>
+            </form>
+        </article>
+    </section>
+</body>
+</html>
