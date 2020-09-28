@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.masked{
+    color:#fff;
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: "LeagueGothicRegular",Lucida,sans-serif; 
+    font-size: 100px; 
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-bottom: 10px;
+    text-align:center; 
+    text-transform: uppercase;
+}
+
+table {
+   border-style:outset; 
+   border-width:12px; 
+   border-color:rgb(166,199,166); 
+   margin: 12px auto;
+}
+
+td {
+    background-color:rgb(150,150,255);
+    font-family:"Trebuchet MS"; 
+    font-size:9pt; 
+    font-weight:300; 
+    padding: 2.5px 3px;
+    text-align:left; 
+}
+
+input, select {
+    background-color:rgb(180,220,200); 
+    color:rgb(30,40,90);
+    font-family:"Trebuchet MS"; 
+    font-weight:bold; 
+    font-size:8pt; 
+    height: 22px;
+    width: 180px;
+}
+
+.combinar {
+    background-color:rgb(180,220,200);
+    text-align:center; 
+}
+
+.boton {
+    background-color:rgb(150,150,255);
+    color:rgb(30,40,90); 
+    font-family:Trebuchet MS; 
+    font-size:8pt; 
+    font-weight:bold; 
+    text-align:center;
+}

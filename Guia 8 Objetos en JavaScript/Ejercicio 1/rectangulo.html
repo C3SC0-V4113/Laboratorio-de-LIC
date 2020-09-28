@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áreas de rectángulos</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <script src="js/calculo.js"></script>
+</head>
+<body>
+    <section id="slick">
+        <!--Área de formulario-->
+        <div class="contact-form">
+            <!--Título-->
+            <div class="title">Cálculo de área y perimetro</div>
+            <!--Texto indicativo-->
+            <p class="intro">Ingrese los siguientes datos</p>
+            <!--Formulario-->
+            <div class="w-100">
+                <!--Campos de formulario-->
+                <form action="javascript:void(0);" name="frmrectangulo" id="frmrectangulo">
+                    <!--Campo para la base-->
+                    <div class="field">
+                        <input type="number" name="base" id="txtbase" min="0" max="1000" step=".1" placeholder="(Base)" required>
+                        <span class="entypo-base icon"></span>
+                        <span class="slick-tip left">Ingrese la base:</span>
+                    </div>
+                    <!--Campo para la altura-->
+                    <div class="field">
+                        <input type="number" name="altura" id="txtaltura" min="0" max="1000" step=".1" placeholder="(Altura)" required>
+                        <span class="entypo-altura icon"></span>
+                        <span class="slick-tip left">Ingrese la altura</span>
+                    </div>
+                    <!--Botones para hacer los calculos-->
+                    <input type="submit" value="area" class="send" name="btnarea" id="area">
+                    <input type="submit" value="perimetro" class="send" name="btnperimetro" id="perimetro">
+                </form>
+                <!--Fin de campos de formulario-->
+            </div>
+        </div>
+        <!--Final del área del formulario-->
+    </section>
+    
+</body>
+</html>

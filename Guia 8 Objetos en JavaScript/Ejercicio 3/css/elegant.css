@@ -1,0 +1,134 @@
+/* Estilos básicos para toda la página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 15px;
+    /* Old browsers */
+    background: #f9a845; 
+    /* FF3.6+ */
+    background: -moz-linear-gradient(45deg, #f9a845 0%, #f9c920 50%, #ff9300 51%, #ff7f04 100%); 
+    /* Chrome,Safari4+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#f9a845), color-stop(50%,#f9c920), color-stop(51%,#ff9300), color-stop(100%,#ff7f04)); 
+    /* Chrome10+,Safari5.1+ */
+    background: -webkit-linear-gradient(45deg, #f9a845 0%,#f9c920 50%,#ff9300 51%,#ff7f04 100%); 
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(45deg, #f9a845 0%,#f9c920 50%,#ff9300 51%,#ff7f04 100%); 
+    /* IE10+ */
+    background: -ms-linear-gradient(45deg, #f9a845 0%,#f9c920 50%,#ff9300 51%,#ff7f04 100%); 
+    /* W3C */
+    background: linear-gradient(45deg, #f9a845 0%,#f9c920 50%,#ff9300 51%,#ff7f04 100%); 
+    /* IE6-9 fallback on horizontal gradient */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9a845', endColorstr='#ff7f04',GradientType=1 ); 
+}
+
+header h1 {
+    font: bold 2.2em/24px Tahoma,Geneva,"Liberation Sans";
+    color: #091363;
+    padding: 24px 0;
+    text-align: center;
+    text-shadow: 2px 2px 0px #abf, 4px 4px 0px #909090;
+}
+
+/* Elegant Aero para el formulario */
+.elegant-aero {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #D2E9FF;
+    padding: 20px 20px 20px 20px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;
+}
+
+.elegant-aero h1 {
+    font: 24px "Trebuchet MS",Arial,Helvetica,"Liberation Sans";
+    padding: 10px 10px 10px 20px;
+    display: block;
+    background: #C0E1FF;
+    border-bottom: 1px solid #B8DDFF;
+    margin: -20px -20px 15px;
+}
+
+.elegant-aero h1>span {
+    display: block;
+    font-size: 11px;
+}
+
+.elegant-aero label>span {
+    float: left;
+    margin-top: 10px;
+    color: #5E5E5E;
+}
+
+.elegant-aero label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+
+.elegant-aero label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.elegant-aero input[type="text"], 
+.elegant-aero input[type="email"], 
+.elegant-aero textarea, 
+.elegant-aero select {
+    color: #888;
+    width: 70%;
+    padding: 0px 0px 0px 5px;
+    border: 1px solid #C5E2FF;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow:inset 0px 1px 6px #ECF3F5;
+    box-shadow: inset 0px 1px 6px #ECF3F5;
+    font: 200 0.9em/25px Arial, Helvetica, sans-serif;
+    height: 30px;
+    line-height:15px;
+    margin: 2px 6px 16px 0px;
+}
+
+.elegant-aero textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+    width: 70%;
+}
+
+.elegant-aero select {
+    background: #fbfbfb url('../img/down-arrow.png') no-repeat 99% 50%;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    -o-appearance:none;
+    -ms-appearance:none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+}
+
+.elegant-aero .button{
+    padding: 10px 30px 10px 30px;
+    background: #66C1E4;
+    border: none;
+    color: #FFF;
+    box-shadow: 1px 1px 1px #4C6E91;
+    -webkit-box-shadow: 1px 1px 1px #4C6E91;
+    -moz-box-shadow: 1px 1px 1px #4C6E91;
+    text-shadow: 1px 1px 1px #5079A3;
+   
+}
+
+.elegant-aero .button:hover{
+    background: #3EB1DD;
+}

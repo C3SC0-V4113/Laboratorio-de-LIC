@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'YanoneKaffeesatzRegular';
+    src: url('../fonts/yanonekaffeesatz/YanoneKaffeesatz-Regular-webfont.eot');
+    src: url('../fonts/yanonekaffeesatz/YanoneKaffeesatz-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/yanonekaffeesatz/YanoneKaffeesatz-Regular-webfont.woff') format('woff'),
+         url('../fonts/yanonekaffeesatz/YanoneKaffeesatz-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/yanonekaffeesatz/YanoneKaffeesatz-Regular-webfont.svg#YanoneKaffeesatzRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/bebasneue/BebasNeue-webfont.eot');
+    src: url('../fonts/bebasneue/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/bebasneue/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
