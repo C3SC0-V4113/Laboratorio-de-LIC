@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear y editar tablas con JS</title>
+    <link rel="stylesheet" href="css/modernform.css">
+    <script src="js/alumnosudb.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <section class="tabblue">
+            <ul class="tabs blue">
+                <li>
+                    <input type="radio" name="tabs blue" id="tab1" checked="">
+                    <label for="tab1">Datos del alumno</label>
+                    <div id="tab-content1" class="tab-content">
+                        <p>
+                            Ingresa los siguientes datos para completar tu registro.
+                        </p>
+                        <form name="frmmat" id="pais">
+                            <span class="tabaddon"><i class="fa fa-user fa-2x"></i></span>
+                            <input type="text" name="txtname" id="txtname" required="required" placeholder="(Su nombre)" class="field" />
+                            <span class="tabaddon"><i class="fa fa-envelope fa-2x"></i></span>
+                            <input type="text" name="txtlastname" id="txtlastname" required="required" placeholder="(Su apellido)" class="field" />
+                            <span class="tabaddon"><i class="fa fa-lock fa-2x"></i></span>
+                            <input type="number" name="txtage" id="txtage" required="required" placeholder="(Su edad)" class="field" />       
+                            <div class="accounttype">
+                                <p>Género:</p>
+                                <input type="radio" value="Masculino" id="radioOne" name="chkgender" checked="checked" />
+                                <label for="radioOne" class="radio" chec>Masculino</label>
+                                <input type="radio" value="Femenino" id="radioTwo" name="chkgender" />
+                                <label for="radioTwo" class="radio">Femenino</label>                               
+                            </div>
+                            <span class="tabaddon"><i class="fa fa-degree fa-2x"></i></span>
+                            <select name="seldegree" id="seldegree">
+                                <option disabled="" selected="" value="0">(Seleccione una carrera)</option>
+                                <option value="Ingeniería en Computación">Ingeniería en Computación</option>
+                                <option value="Ingeniería en Mecatrónica">Ingeniería en Mecatrónica</option>
+                                <option value="Ingeniería Industrial">Ingeniería Industrial</option>
+                                <option value="Ingeniería Biomédica">Ingeniería Biomédica</option>
+                                <option value="Ingeniería en Telecomunicaciones">Ingeniería en Telecomunicaciones</option>
+                                <option value="Ingeniería Aeronáutica">Ingeniería Aeronáutica</option>
+                                <option value="Licenciatura en Mercadotecnia">Licenciatura en Mercadotecnia</option>
+                                <option value="Licenciatura en Idiomas">Licenciatura en Idiomas</option>
+                                <option value="Licenciatura de Diseño Gráfico">Licenciatura de Diseño Gráfico</option>
+                                <option value="Licenciatura en Comunicación">Licenciatura en Comunicación</option>
+                                <option value="Licenciatura en Administración de Empresas">Licenciatura en Administración de Empresas</option>
+                                <option value="Técnico en Computación">Técnico en Computación</option>
+                                <option value="Técnico en Multimedia">Técnico en Multimedia</option>
+                                <option value="Técnico en Ortesis y Prótesis">Técnico en Ortesis y Prótesis</option>                               
+                            </select>
+                            <div class="btn">
+                                <input type="button" name="btnSend" id="btnSend" value="Matricular">
+                            </div>                    
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

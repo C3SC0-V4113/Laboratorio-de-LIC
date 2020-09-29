@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducir Fechas</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/formstyle.css">
+    <script src="js/calculoedad.js"></script>
+</head>
+<body>
+    <div class="cover">
+        <form action="javascript:void(0);" name="frmFechaNac" id="contactform">
+            <h2 class="contact">Tu fecha de nacimiento</h2>
+            <span class="contact">
+                <label for="dia">Día:</label>
+            </span>
+            <select name="seldia" id="dia" disabled>
+                <script>
+                    for(i=1;i<=31;i++){
+                        document.write("<option value='"+i+"'>"+i+"</option>");
+                    }
+                </script>
+            </select>
+            <span class="contact">
+                <label for="mes">Mes:</label>&nbsp;
+            </span>
+            <select name="selmes" id="mes">
+                <option value="Enero" selected>Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>  
+                <option value="Diciembre">Diciembre</option>               
+            </select>
+            <span class="contact">
+                <label for="txtano">Año:</label>&nbsp;
+            </span>
+            <input type="text" value="2014" name="txtano" id="ano" size="4" maxlength="4" /><br />
+            <input type="button" name="btncalcular" id="calcular" value="Tu edad" />
+        </form>
+    </div>
+</body>
+</html>

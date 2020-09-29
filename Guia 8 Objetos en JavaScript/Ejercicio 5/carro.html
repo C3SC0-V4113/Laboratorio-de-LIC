@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases y Objetos</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/carform.css">
+    <script src="js/showcar.js"></script>
+</head>
+<body>
+    <header id="insetBgd">
+        <h1>Ejemplo del uso de objetos</h1>
+    </header>
+    <section>
+        <article>
+            <form name="frmcar" id="frmcar">
+                <fieldset id="fldcar" class="group">
+                    <legend><span class="labelgroup">Datos del carro</span></legend>
+                    <label for="selfab">Fabricante: </label>
+                    <select name="selfab" id="selfab">
+                        <option value="Toyota">Toyota</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="Hyundai">Hyundai</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Mitsubishi">Mitsubishi</option>                       
+                    </select>
+                    <label for="selmod">Modelo: </label>
+                    <select name="selmod" id="selmod">
+                        <option value="Corolla">Corolla</option>
+                        <option value="Echo">Echo</option>
+                        <option value="Yaris">Yaris</option>
+                        <option value="Avensis">Avensis</option>
+                        <option value="Camry">Camry</option>
+                        <option value="Land Cruiser">Land Cruiser</option>
+                        <option value="4 Runner">4 Runner</option>
+                        <option value="Hilux">Hilux</option>                       
+                    </select>
+                    <label for="radcolor" class="colores">Color:</label><br />
+                    <input type="radio" value="Blanco" alt="Marque el color del carro" id="radcolor" name="radcolor" />
+                    <label for="radcolor" class="colores">Blanco</label><br>
+                    <input type="radio" value="Negro" alt="Marque el color del carro" id="radcolor" name="radcolor" />
+                    <label for="radcolor" class="colores">Negro</label><br>
+                    <input type="radio" value="Gris" alt="Marque el color del carro" id="radcolor" name="radcolor" />
+                    <label for="radcolor" class="colores">Gris</label><br>
+                    <input type="radio" value="Azul" alt="Marque el color del carro" id="radcolor" name="radcolor" />
+                    <label for="radcolor" class="colores">Azul</label><br>
+                    <input type="radio" value="Verde" alt="Marque el color del carro" id="radcolor" name="radcolor" />
+                    <label for="radcolor" class="colores">Verde</label><br>
+                    <input type="radio" value="Rojo" alt="Marque el color del carro" id="radcolor" name="radcolor" />
+                    <label for="radcolor" class="colores">Rojo</label><br>
+                    <input type="radio" value="Amarillo" alt="Marque el color del carro" id="radcolor" name="radcolor" />
+                    <label for="radcolor" class="colores">Amarillo</label><br>
+                    <input type="radio" value="Beige" alt="Marque el color del carro" id="radcolor" name="radcolor" />
+                    <label for="radcolor" class="colores">Beige</label> <br />
+                    <label for="txtanio">Año: </label>
+                    <input type="number" name="txtanio" placeholder="2014" maxlength="4" />
+                    <input type="button" name="btnEnviar" id="enviar" value="Enviar" />
+                </fieldset>
+            </form>
+        </article>
+    </section>
+</body>
+</html>
