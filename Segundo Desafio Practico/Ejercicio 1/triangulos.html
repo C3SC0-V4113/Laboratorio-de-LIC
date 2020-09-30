@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/triangulos.js"></script>
+    <title>Triangulos por sus lados</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" id="encabezado">
+                <h1>Ejercicio 1 Desafio Practico</h1>
+                <p>Clasificador de Triangulos</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="text-center">Escriba los 3 lados del triangulo y nos ocuparemos del resto</p>
+                <form name="frm_triangulos">
+                    <div class="form-group">
+                      <input type="number"  class="form-control" name="Lado1" id="lado1" placeholder="Lado 1">
+                      <input type="number"  class="form-control" name="Lado2" id="lado2" placeholder="Lado 2">
+                      <input type="number"  class="form-control" name="Lado3" id="lado3" placeholder="Lado 3">
+                    </div>
+                    <input type="button" class="btn btn-primary" value="Clasificar" id="btnClasificar">
+                  </form>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="text-center">Contador de Triangulos</p>
+                <div class="row text-center">
+                    <div class="col-12 col-md-3" id="conter">
+                        <p>Triangulos Totales</p>
+                        <h1 id="Contador1"></h1>
+                    </div>
+                    <div class="col-12 col-md-3" id="conter">
+                        <p>Triangulos Isosceles</p>
+                        <h1 id="Contador2"></h1>
+                    </div>
+                    <div class="col-12 col-md-3" id="conter">
+                        <p>Triangulos Equilateros</p>
+                        <h1 id="Contador3"></h1>
+                    </div>
+                    <div class="col-12 col-md-3" id="conter">
+                        <p>Triangulos Escalenos</p>
+                        <h1 id="Contador4"></h1>
+                    </div>
+                </div>
+                <p class="text-center" id="mayorquemenorque"></p>
+            </div>
+            <div class="col-12">
+                <h1 class="text-center">Arreglos</h1>
+                <div class="row text-center">
+                    <div class="col-12" id="Totales">
+                        <p>Triangulos Totales</p>
+                        <div id="Triantator1"></div>
+                    </div>
+                    <div class="col-12" id="Isos">
+                        <p>Triangulos Isosceles</p>
+                        <div id="Triantator2"></div>
+                    </div>
+                    <div class="col-12" id="Equi">
+                        <p>Triangulos Equilateros</p>
+                        <div id="Triantator3"></div>
+                    </div>
+                    <div class="col-12" id="Escal">
+                        <p>Triangulos Escalenos</p>
+                        <div id="Triantator4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
