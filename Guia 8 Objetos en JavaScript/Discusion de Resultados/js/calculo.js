@@ -26,8 +26,8 @@ function Rectangulo(base,potencia,resultado){
     //Metodos de la clase
     //Definidos usando el constructor Function()
     this.carea=new Function("return this.resultado");
-    //this.mostrar=new Function("valor","tipoc","var htmltext=\"('El '+tipoc+' es: '+valor)\" Impresor.innerHTML=htmltext");
-    this.mostrar=new Function("valor","tipoc","alert('El '+tipoc+' es: '+valor)");
+    this.mostrar=new Function("valor","tipoc","'El '+tipoc+' es: '+valor");
+    Impresor.innerHTML="<p>La potencia es: "+this.resultado+"</p>";
 }
 
 //Asociando función que manejará el evento load al cargar la página

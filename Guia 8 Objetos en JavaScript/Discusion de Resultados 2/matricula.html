@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear y editar tablas con JS</title>
+    <link rel="stylesheet" href="css/modernform.css">
+    <link rel="stylesheet" href="css/infoalumno.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
+    <script src="js/alumnosudb.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <section class="tabblue">
+                    <ul class="tabs blue">
+                        <li>
+                            <input type="radio" name="tabs blue" id="tab1" checked="">
+                            <label for="tab1">Datos del alumno</label>
+                            <div id="tab-content1" class="tab-content">
+                                <p>
+                                    Ingresa los siguientes datos para completar tu registro.
+                                </p>
+                                <form name="frmmat" id="pais">
+                                    <span class="tabaddon"><i class="fa fa-user fa-2x"></i></span>
+                                    <input type="text" name="txtname" id="txtname" required="required" placeholder="(Su nombre)" class="field" />
+                                    <span class="tabaddon"><i class="fa fa-envelope fa-2x"></i></span>
+                                    <input type="text" name="txtlastname" id="txtlastname" required="required" placeholder="(Su apellido)" class="field" />
+                                    <span class="tabaddon"><i class="fa fa-user fa-2x"></i></span>
+                                    <input type="email" name="txtmail" id="txtemail" required="required" placeholder="(Su correo)" class="field" />
+                                    <span class="tabaddon"><i class="fa fa-envelope fa-2x"></i></span>
+                                    <input type="password" name="txtpass" id="txtpass" required="required" placeholder="(Su contraseña)" class="field" />
+                                    <p class="contact">Tu fecha de nacimiento</p>
+                                    <span class="tabaddon"><i class="fa fa-lock fa-2x"></i></span>
+                                    <div>
+                                        <select name="seldia" id="dia" disabled>
+                                            <option value="" disabled selected hidden>Dia</option>
+                                            <script>
+                                                for(i=1;i<=31;i++){
+                                                    document.write("<option value='"+i+"'>"+i+"</option>");
+                                                }
+                                                console.log("dias finalizados");
+                                            </script>
+                                        </select>
+                                        <span class="tabaddon"><i class="fa fa-lock fa-2x"></i></span>
+                                        <select name="selmes" id="mes">
+                                            <option value="" disabled selected hidden>Mes</option>
+                                            <option value="Enero" selected>Enero</option>
+                                            <option value="Febrero">Febrero</option>
+                                            <option value="Marzo">Marzo</option>
+                                            <option value="Abril">Abril</option>
+                                            <option value="Mayo">Mayo</option>
+                                            <option value="Junio">Junio</option>
+                                            <option value="Julio">Julio</option>
+                                            <option value="Agosto">Agosto</option>
+                                            <option value="Septiembre">Septiembre</option>
+                                            <option value="Octubre">Octubre</option>
+                                            <option value="Noviembre">Noviembre</option>  
+                                            <option value="Diciembre">Diciembre</option>               
+                                        </select>
+                                        <span class="tabaddon"><i class="fa fa-lock fa-2x"></i></span>
+                                        <input type="text" value="2014" placeholder="Año" name="txtano" id="ano" size="4" maxlength="4" /><br />
+                                    </div>     
+                                    <div class="accounttype">
+                                        <p>Sexo:</p>
+                                        <input type="radio" value="Masculino" id="radioOne" name="chkgender" checked="checked" />
+                                        <label for="radioOne" class="radio" chec>Masculino</label>
+                                        <input type="radio" value="Femenino" id="radioTwo" name="chkgender" />
+                                        <label for="radioTwo" class="radio">Femenino</label>                               
+                                    </div>
+                                    <span class="tabaddon"><i class="fa fa-degree fa-2x"></i></span>
+                                    <select name="seldegree" id="seldegree">
+                                        <option disabled="" selected="" value="0">(Seleccione una carrera)</option>
+                                        <option value="Ingeniería en Computación">Ingeniería en Computación</option>
+                                        <option value="Ingeniería en Mecatrónica">Ingeniería en Mecatrónica</option>
+                                        <option value="Ingeniería Industrial">Ingeniería Industrial</option>
+                                        <option value="Ingeniería Biomédica">Ingeniería Biomédica</option>
+                                        <option value="Ingeniería en Telecomunicaciones">Ingeniería en Telecomunicaciones</option>
+                                        <option value="Ingeniería Aeronáutica">Ingeniería Aeronáutica</option>
+                                        <option value="Licenciatura en Mercadotecnia">Licenciatura en Mercadotecnia</option>
+                                        <option value="Licenciatura en Idiomas">Licenciatura en Idiomas</option>
+                                        <option value="Licenciatura de Diseño Gráfico">Licenciatura de Diseño Gráfico</option>
+                                        <option value="Licenciatura en Comunicación">Licenciatura en Comunicación</option>
+                                        <option value="Licenciatura en Administración de Empresas">Licenciatura en Administración de Empresas</option>
+                                        <option value="Técnico en Computación">Técnico en Computación</option>
+                                        <option value="Técnico en Multimedia">Técnico en Multimedia</option>
+                                        <option value="Técnico en Ortesis y Prótesis">Técnico en Ortesis y Prótesis</option>                               
+                                    </select>
+                                    <div class="btn">
+                                        <input type="button" name="btnSend" id="btnSend" value="Matricular">
+                                        <input type="reset">
+                                    </div>                    
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-12 col-md-6" id="impresor"></div>
+        </div>
+    </div>
+</body>
+</html>
