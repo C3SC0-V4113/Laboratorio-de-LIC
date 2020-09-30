@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potencias</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <script src="js/calculo.js"></script>
+</head>
+<body>
+    <section id="slick">
+        <div class="contact-form">
+            <div class="title">Potencia</div>
+            <p class="intro">Ingrese los siguientes datos</p>
+            <div class="w-100">
+                <form action="javascript:void(0);" name="frm_potencia" id="frm_potencia">
+                    <div class="field">
+                        <input type="number" name="base" id="txtbase" min="0" max="1000" step=".1" placeholder="(Base)" required>
+                        <span class="entypo-base icon"></span>
+                        <span class="slick-tip left">Ingrese la base:</span>
+                    </div>
+                    <div class="field">
+                        <input type="number" name="potencia" id="txtpotencia" min="0" max="1000" step=".1" placeholder="(Potencia)" required>
+                        <span class="entypo-altura icon"></span>
+                        <span class="slick-tip left">Ingrese la potencia</span>
+                    </div>
+                    <input type="submit" value="Potencia" class="send" name="btnarea" id="area">
+                    <input type="reset" value="Restablecer" class="send">
+                </form>
+            </div>
+            <p class="intro" id=impresor></div>
+        </div>
+    </section>
+    
+</body>
+</html>
