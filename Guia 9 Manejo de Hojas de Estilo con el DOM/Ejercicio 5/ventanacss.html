@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventanas creadas en CSS</title>
+    <link rel="stylesheet" href="css/windows.css">
+    <script src="js/drag.js"></script>
+    <script src="js/loadevents.js"></script>
+</head>
+<body>
+    <div class="window" style="left: 10px; top: 10px; z-index: 10;">
+        <div class="titlebar" id="titlewl">
+            Ventana de prueba
+        </div>
+        <div class="content">
+            <p>
+                La paleta de colores RGB (RVA en español) consta,
+                básicamente, de tres colores primarios aditivos:
+                Rojo-Verde-Azul. Estos colores primarios aditivos, en HTML,
+                están representados por tres pares hexadecimales del tipo
+                0xHH-HH-HH según el siguiente formato:               
+            </p>
+            <p class="centrado">
+                #RRGGBB (= #RRVVAA)
+            </p>
+            <p>
+                Los valores que puede adoptar cada uno de los tres pares hexadecimales
+                van del 0x00 (0 decimal) al 0xFF (255 decimal). Cuanto mayor sea el
+                valor del par, tanto mayor será también la intensidad
+                (matiz, brillo o claridad) del color correspondiente a ese par
+                (y viceversa). Esto implica que el extremo inferior de la escala
+                cromática parte de una intensidad (grado) de color mínima
+                (nulo = par 0x00), pasa por una intensidad de color media (mediano =
+                par 0x80 [128 decimal]) hasta llegar a una intensidad de color
+                máxima (saturado = par 0xFF). El grado de más alta pureza
+                (absoluto) de un color primario aditivo estará determinado por la
+                presencia total del mismo (saturación = 0xFF) junto con la
+                ausencia total (nulidad = 0x00) de los otros dos colores primarios
+                aditivos.
+            </p>
+        </div>
+    </div>
+    <div class="window" style="left:75px;top:110px;z-index:20;">
+        <div class="titlebaractive" id="titlew2">
+            Otra Ventana
+        </div>
+        <div class="content translucent" style="background-color: #d0d0d0; font-weight: bold;">
+            <p>
+                Esta es otra ventana. Su valor <tt>z-index</tt> la pone encima
+                de la otra ventana. Los estilos CSS hacen que su &aacute;rea
+                de contenido se vea transparente en los navegadores que soportan
+                esta caracter&iacute;stica.
+            </p>
+            <img src="img/3dboxmodel.jpg" alt="model3d">
+        </div>
+    </div>
+</body>
+</html>

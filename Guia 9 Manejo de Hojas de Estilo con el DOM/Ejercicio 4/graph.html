@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graficos de barras con JavaScript</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/graph.css">
+    <link rel="stylesheet" href="css/formgraph.css">
+    <script src="js/graph.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Grafico de barras</h1>
+    </header>
+    <section>
+        <article>
+            <form action="javascript:void(0)">
+                <fieldset class="group">
+                    <legend><span class="labelgroup">Seleccione una gráfica:</span></legend>
+                    <input type="radio" name="type" id="browser" value="browser" checked="checked" />
+                    <label for="browser">Uso de navegadores</label><br />
+                    <input type="radio" name="type" id="platform" value="platform" />
+                    <label for="platform">Uso de Sistemas Operativos</label>
+                    </fieldset>
+                    <fieldset class="group">
+                    <legend>Elija un color:</legend>
+                    <input type="radio" name="color" id="colorred" value="lilRed.gif" checked="checked" />
+                    <label for="colorred">Red</label>
+                    <input type="radio" name="color" id="colorgreen" value="lilGreen.gif" />
+                    <label for="colorgreen">Verde</label>
+                    <input type="radio" name="color" id="colorblue" value="lilBlue.gif" />
+                    <label for="colorblue">Azul</label>
+                    </fieldset>
+                    <fieldset class="group">
+                    <legend>Elija una dirección:</legend>
+                    <input type="radio" name="direction" id="horizontal" value="horizontal" checked="checked" />
+                    <label for="horizontal">Horizontal</label>
+                    <input type="radio" name="direction" id="vertical" value="vertical" />
+                    <label for="vertical">Vertical</label>
+                    </fieldset>                   
+            </form>
+        </article>
+        <article id="chartArea"></article>
+    </section>
+</body>
+</html>
