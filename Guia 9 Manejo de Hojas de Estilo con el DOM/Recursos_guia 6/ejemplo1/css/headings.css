@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    font-family: Tahoma,Helvetica,"Liberation Sans";
+}
+
+.formal {
+    background:#57758a;
+    color:#fff;
+    font-family:'LeagueGothic-Regular',sans-serif;
+    font-size:3.6em;
+    padding: 6px 9px;
+    text-align: center;
+    text-shadow: 0px -1px 0px #303030;
+}
+
+.letterpress{
+    color: #222;
+    background:#414141;
+    font-family:'Chunkfive',sans-serif;
+    font-size:3.2em;
+    padding-right: 12px;
+    text-align: right;
+    text-shadow: 0px 2px 1px #555;
+}
+
+.offset{
+    background:#e4e4c7;
+    /* Dejar suficiente espacio de relleno para acomodar la sombra */
+    padding:16px 16px 25px 16px; 
+    font-family:'LeagueGothic-Regular',sans-serif;
+    font-size:3.8em;
+    letter-spacing:5px;
+    font-weight:bold;
+    color:#526972;
+    text-align: left;
+    text-shadow:4px 4px 0px #e4e4c7, 
+                6px 6px 0px #526972;
+}
+
+.tdeffect {
+	background-image:url(../img/three-d.jpg);
+	color:#fff;
+	font:4.2em 'Chunkfive';
+	padding: 9px 10px;
+	text-align:center;
+	text-shadow:0px 1px 0px #999, 
+                0px 2px 0px #888, 
+                0px 3px 0px #777, 
+                0px 4px 0px #666, 
+                0px 5px 0px #555, 
+                0px 6px 0px #444, 
+                0px 7px 0px #333, 
+                0px 8px 7px #001135;
+}

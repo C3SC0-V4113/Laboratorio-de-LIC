@@ -1,0 +1,5 @@
+-Use bootstrap 4 por medio de enlace para los primeros 2 ejercicios
+Enlace de GitHub:
+https://github.com/C3SC0-V4113/Laboratorio-de-LIC.git
+(Sigue Privado, ojalá hoy si funcione)
+Lo hice individual

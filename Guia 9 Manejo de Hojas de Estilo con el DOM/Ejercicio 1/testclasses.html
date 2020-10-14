@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de clases CSS dinámico</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/headings.css">
+    <link rel="stylesheet" href="css/button.css">
+    <script src="js/classname.js"></script>
+    <script src="js/CSSClass.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="head">Texto de prueba estilos con className</h1>
+    </header>
+    <section>
+        <article>
+            <form name="frmclass">
+                <label>Estilo:</label>
+                <select name="classes">
+                    <option value="" selected="selected">(Escoja un estilo)</option>
+                    <option value="formal">Formal</option>
+                    <option value="letterpress">Texto incrustado</option>
+                    <option value="offset">Sombra desplazada</option>
+                    <option value="tdeffect">Efecto 3D</option>
+                </select><br>
+                <input type="button" name="agregar" id="add" value="Agregar">
+                <input type="button" value="Eliminar" name="eliminar" id="remove">
+            </form>
+        </article>
+    </section>
+    
+</body>
+</html>

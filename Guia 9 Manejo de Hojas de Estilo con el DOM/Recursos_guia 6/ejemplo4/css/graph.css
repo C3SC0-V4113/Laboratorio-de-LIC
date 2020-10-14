@@ -1,0 +1,54 @@
+h1 {
+    color: #6d0019;
+    font: 900 2.5em/2.5 "LatoLight","Open Sans","Helvetica Neue",Helvetica,Arial,"Liberation Sans",sans-serif;
+    text-align: center;
+    text-shadow:1px 1px 0 #CCC,
+                2px 2px 0 #CCC, /* end of 2 level deep grey shadow */
+                3px 3px 0 #666,
+                4px 4px 0 #666,
+                5px 5px 0 #444,
+                6px 6px 0 #444; /* end of 4 level deep dark shadow */
+}
+
+h2 {
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    color: #888;
+    font: 900 1.5em/22px "LatoLight","Open Sans","Helvetica Neue",Helvetica,Arial,"Liberation Sans",sans-serif;
+    text-shadow: 1px 1px 3px #666, -1px -1px 3px #FFF, 1px 1px #666, -1px -1px #FFF;
+}
+
+table tr {
+    margin-bottom: 12px;
+}
+
+table thead:hover {
+    background: Lavender;
+}
+
+.vert {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.horiz {
+    padding: 5px;
+}
+
+th.vert {
+    border-left: 1px black solid;
+    border-bottom: 1px black solid;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 1em;
+}
+
+th.horiz {
+    border-right: 1px black solid;
+    vertical-align: middle;
+    text-align: middle;
+    font-size: 
+}

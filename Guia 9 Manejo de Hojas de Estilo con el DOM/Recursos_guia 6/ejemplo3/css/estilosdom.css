@@ -1,0 +1,36 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html, body {
+   height: 100%;
+}
+
+body    {
+   background-color:Lavender;
+}
+
+strong  {
+   color:red;
+}
+
+h1      {
+   color:red;
+   font-size:24pt;
+   font-style:italic;
+   font-family:Impact;
+ text-align:center;
+}
+
+em      {
+   font-weight:bold;
+   font-style:normal;
+   text-decoration:underline;
+}
+
+p       {
+   color:blue;
+   font-size:12pt;
+   font-family:Arial;
+}
