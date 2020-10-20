@@ -14,16 +14,22 @@ CSSClass.is=function(e,c) {
 };
 
 CSSClass.add=function(e,c){
+    console.log(typeof e!="string");
+    console.log(CSSClass.is(e,c));
     if (typeof e=="string") {
+        console.log("Si es string");
         e=document.getElementById(e);
     }
     if (CSSClass.is(e,c)) {
+        console.log("Estoy dentro");
         return;
     }
     if (e.className) {
+        console.log("Estoy dentro x2");
         c=" "+c;
     }
     e.className+=c;
+    console.log(e.className);
 };
 
 CSSClass.remove=function(e,c){

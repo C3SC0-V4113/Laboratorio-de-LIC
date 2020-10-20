@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graficos de barras con JavaScript Complementario</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/graph.css">
+    <link rel="stylesheet" href="css/formgraph.css">
+    <script src="js/graph copy.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Grafico de barras</h1>
+    </header>
+    <section>
+        <article>
+            <form action="javascript:void(0)">
+                <fieldset>
+                    <legend>Elija los datos:</legend>
+                    <input type="number" name="Año" id="idAño">
+                    <label for="Año">Año de los datos</label>
+                    <input type="number" name="Firefox" id="FF">
+                    <label for="Firefox">Firefox</label>
+                    <input type="number" name="Chrome" id="CH">
+                    <label for="Chrome">Chrome</label>
+                    <input type="number" name="InternetExplorer" id="IE">
+                    <label for="InternetExplorer">Internet Explorer</label>
+                    <input type="number" name="Safari" id="SA">
+                    <label for="Safari">Safari</label>
+                    <input type="number" name="Opera" id="OP">
+                    <label for="Opera">Opera</label>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>Elija un color:</legend>
+                    <input type="radio" name="color" id="colorred" value="lilRed.gif" checked="checked" />
+                    <label for="colorred">Red</label>
+                    <input type="radio" name="color" id="colorgreen" value="lilGreen.gif" />
+                    <label for="colorgreen">Verde</label>
+                    <input type="radio" name="color" id="colorblue" value="lilBlue.gif" />
+                    <label for="colorblue">Azul</label>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>Elija una dirección:</legend>
+                    <input type="radio" name="direction" id="horizontal" value="horizontal" checked="checked" />
+                    <label for="horizontal">Horizontal</label>
+                    <input type="radio" name="direction" id="vertical" value="vertical" />
+                    <label for="vertical">Vertical</label>
+                </fieldset>
+                <input type="button" value="Enviar" id="Envio">               
+            </form>
+        </article>
+        <article id="chartArea"></article>
+    </section>
+</body>
+</html>
