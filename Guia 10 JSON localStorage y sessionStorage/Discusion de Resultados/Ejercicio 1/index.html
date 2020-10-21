@@ -10,36 +10,38 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <!--Los scripts creados por mi-->
-    <script src="js/localStorage.js"></script>
+    <!--<script src="js/localStorage.js"></script>-->
+    <script src="js/sesionStorage.js"></script>
 </head>
 <body>
     <div class="container">
         <h1  class="text-center">FORMULARIO CON COOLDOWN DE 5 SEGUNDOS</h1>
         <div class="row">
             <div class="col-12">
-                <form>
+                <form name="Formulario">
                     <div class="form-group">
                       <label for="Nombre">Nombre Completo:</label>
                       <input type="text" class="form-control" id="Nombre" placeholder="(Inserte Nombre)">
                     </div>
                     <div class="form-group">
                       <label for="Pais">Seleccione el pais del que quiere escapar</label>
-                      <select class="form-control" id="Pais">
+                      <select class="form-control" name="SelectorCombo" id="Pais">
                         <option selected>Seleccione una opcion...</option>
                         <option value="Belice">Belice</option>
-                        <option value="CostaRica">Costa Rica</option>
-                        <option value="ESA">El Salvador</option>
-                        <option value="HON">Honduras</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Honduras">Honduras</option>
                         <option value="Guatemala">Guatemala</option>
-                        <option value="Nica">Nicaragua</option>
-                        <option value="PAN">Panamá</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="Panamá">Panamá</option>
                       </select>
                     </div>
                     <div class="form-group">
                       <label for="Biografia">Biografia</label>
-                      <textarea class="form-control" id="Biografia" rows="6"></textarea>
+                      <textarea class="form-control" name="AreaTexto" id="Biografia" rows="6"></textarea>
                     </div>
                     <button type="button" class="btn btn-primary mb-2" id="EnvioPapu">Enviar</button>
+                    <button type="button" class="btn btn-primary mb-2" id="ReciboPapu">Restaurar</button>
                     <p id="countabajo"></p>
                   </form>
             </div>

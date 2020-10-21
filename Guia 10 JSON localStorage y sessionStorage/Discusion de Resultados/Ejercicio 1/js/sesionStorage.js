@@ -34,8 +34,8 @@ function Añadir(){
     Persona.bio=Biografia.value;
     ArregloPersonas.push(Persona);
 
-    console.log("Guardando arreglo de datos en localStorage");
-    localStorage.setItem("personas",JSON.stringify(ArregloPersonas));
+    console.log("Guardando arreglo de datos en sessionStorage");
+    sessionStorage.setItem("personas",JSON.stringify(ArregloPersonas));
     ////////////////////////////
     var Parrafo=document.getElementById("countabajo");
     TiempoRestante=5;
@@ -55,8 +55,8 @@ function Añadir(){
 function Restaurar(){
     var DivImpresor=document.getElementById("Impresor");
     DivImpresor.innerHTML="";
-    console.log("Restaurando arreglo de datos desde localStorage");
-    var Arreglo=JSON.parse(localStorage.getItem("personas"));
+    console.log("Restaurando arreglo de datos desde sessionStorage");
+    var Arreglo=JSON.parse(sessionStorage.getItem("personas"));
     if (Arreglo!=null) {
         for (let i = 0; i < Arreglo.length; i++) {
             var Persona=Arreglo[i];
