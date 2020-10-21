@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/appform.js"></script>
+    <title>Prueba de almacenamiento local</title>
+</head>
+<body>
+    <section>
+        <article>
+            <form name="regestryform">
+                <fieldset id="myform">
+                    <legend>Datos personales</legend>
+                    <ul class="formset">
+                        <li>
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="name" id="name" placeholder="(Su nombre)">
+                        </li>
+                        <li>
+                            <label for="age">Edad:</label>
+                            <input type="number" name="age" id="age" placeholder="(Su edad)">
+                        </li>
+                        <li>
+                            <input type="button" value="Guardar dato complejo" id="saveC" onclick="Javascript:saveComplexData()">
+                            <input type="button" value="Restaurar dato complejo" id="restoreC" onclick="Javascript:restoreComplexData()">
+                            <input type="button" value="Guardar arreglo" id="sArray" onclick="Javascript:saveArrayData()">
+                            <input type="button" value="Restaurar Arreglo" id="rArray" onclick="Javascript:restoreArrayData()">
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+            <div id="state"></div>
+        </article>
+    </section>
+</body>
+</html>
