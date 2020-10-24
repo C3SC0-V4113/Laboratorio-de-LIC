@@ -1,0 +1,32 @@
+{
+    "title": "UEFA Champions League",
+    "link": "http://es.uefa.com/uefachampionsleague/",
+    "description": "Liga de campeones de Europa",
+    "language": "es",
+    "items": [
+        {
+            "title" : "Real Madrid CF",
+            "link"  : "http://www.realmadrid.com/",
+            "logo" : "logos/real-madrid.png",
+            "description": "El Real Madrid es una entidad polideportiva con sede en Madrid, España."
+        },
+        {
+            "title": "FC Barcelona",
+            "link": "http://www.fcbarcelona.com/",
+            "logo" : "logos/fc-barcelona.png",
+            "description": "FC Barcelona - Más que un club."
+        },
+        {
+            "title": "FC Bayern München",
+            "link": "http://www.fcbayern.de/es/",
+            "logo" : "logos/bayern-munich.png",
+            "description": "Bayern Munich - Nosotros somos nosotros."
+        },
+        {
+            "title": "Paris Saint Germain",
+            "link": "http://www.psg.fr/es/accueil/0/home",
+            "logo" : "logos/paris-saint-germain.png",
+            "description": "Paris Saint Germain - Aquí es París."
+        }
+    ]
+}

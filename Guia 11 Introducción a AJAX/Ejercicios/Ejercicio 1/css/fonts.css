@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Tenderness';
+    src: url('../fonts/tenderness.eot');
+    src: url('../fonts/tenderness.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tenderness.woff') format('woff'),
+         url('../fonts/tenderness.ttf') format('truetype'),
+         url('../fonts/tenderness.svg#Tenderness') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}

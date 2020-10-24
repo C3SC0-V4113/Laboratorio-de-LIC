@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    outline: none;
+}
+
+header h1 {
+    background-color: #555;
+    color: #2a23eb;
+    font: Bold 3em Tahoma,Helvetica,"Liberation Sans";
+    line-height: 1.5;
+    text-align: center;
+    text-shadow: 0px -2px 0px #bbb,
+                 0px 2px 3px #ddd;
+}
+
+.tooltipShadow {
+    /* IE10 Consumer Preview */ 
+    background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #E4EF81 100%);
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #E4EF81 100%);
+    /* Opera */ 
+    background-image: -o-linear-gradient(top left, #FFFFFF 0%, #E4EF81 100%);
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FFFFFF), color-stop(1, #E4EF81));
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #E4EF81 100%);
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to bottom right, #FFFFFF 0%, #E4EF81 100%);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 4px 0px rgba(26,24,7,1);
+    -moz-box-shadow: 3px 3px 4px 0px rgba(26,24,7,1);
+    -ms-box-shadow: 3px 3px 4px 0px rgba(26,24,7,1);
+    -o-box-shadow: 3px 3px 4px 0px rgba(26,24,7,1);
+    box-shadow: 3px 3px 4px 0px rgba(26,24,7,1);
+    color: #080248;
+    font: Normal 0.85em Tahoma,Helvetica,"Liberation Sans";
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    /* IE 5-7 */
+    filter: alpha(opacity=90);
+    /* Netscape */
+    -moz-opacity: 0.9;
+    /* Webkit */
+    -webkit-opacity: 0.9;
+    /* Safari 1.x */
+    -khtml-opacity: 0.9;
+    /* Good browsers */
+    opacity: 0.9;
+    padding: 12px 9px;
+}
+
+#content p {
+    color: #2a23eb;
+    font: Normal 1em Tahoma,Helvetica,"Liberation Sans";
+    text-align: justify;
+}
+
+#content ol {
+    counter-reset: li; /* Initiate a counter */
+    margin-left: 0; /* Remove the default left margin */
+    padding-left: 0; /* Remove the default left padding */
+}
+
+#content ol > li {
+    position:relative; /* Create a positioning context */
+    margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+    padding:4px 8px; /* Add some spacing around the content */
+    list-style:none; /* Disable the normal item numbering */
+    /* list-style-type: upper-roman; */
+    border-bottom:2px solid #2a23eb;
+    border-top:2px solid #2a23eb;
+    background: rgba(226,226,226,1);
+    background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(50%, rgba(219,219,219,1)), color-stop(51%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+    background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
+}
+
+#content ol > li:hover {
+    background: rgba(235,233,249,1);
+    background: -moz-linear-gradient(top, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(201,200,230,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(235,233,249,1)), color-stop(50%, rgba(216,208,239,1)), color-stop(51%, rgba(206,199,236,1)), color-stop(100%, rgba(201,200,230,1)));
+    background: -webkit-linear-gradient(top, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(201,200,230,1) 100%);
+    background: -o-linear-gradient(top, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(201,200,230,1) 100%);
+    background: -ms-linear-gradient(top, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(201,200,230,1) 100%);
+    background: linear-gradient(to bottom, rgba(235,233,249,1) 0%, rgba(216,208,239,1) 50%, rgba(206,199,236,1) 51%, rgba(201,200,230,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', endColorstr='#c9c8e6', GradientType=0 );
+    color: #300690;
+}
+
+#content ol > li a {
+    text-decoration: none;
+    font-family: "Tenderness","Helvetica Neue", Arial, sans-serif;
+    font-size: 1.3em;
+}
+
+#content ol > li:before {
+    content:counter(li); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    /* Position and style the number */
+    position:absolute;
+    top:-2px;
+    left:-2em;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width:2em;
+    /* Some space between the number and the content in browsers that support
+       generated content but not positioning it (Camino 2 is one example) */
+    margin-right:8px;
+    padding:4px;
+    border-bottom:2px solid #2a23eb;
+    border-top:2px solid #2a23eb;
+    color:#fff;
+    background: rgba(91,83,156,1);
+    background: -moz-linear-gradient(top, rgba(91,83,156,1) 0%, rgba(97,57,219,1) 48%, rgba(85,52,235,1) 51%, rgba(42,35,235,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(91,83,156,1)), color-stop(48%, rgba(97,57,219,1)), color-stop(51%, rgba(85,52,235,1)), color-stop(100%, rgba(42,35,235,1)));
+    background: -webkit-linear-gradient(top, rgba(91,83,156,1) 0%, rgba(97,57,219,1) 48%, rgba(85,52,235,1) 51%, rgba(42,35,235,1) 100%);
+    background: -o-linear-gradient(top, rgba(91,83,156,1) 0%, rgba(97,57,219,1) 48%, rgba(85,52,235,1) 51%, rgba(42,35,235,1) 100%);
+    background: -ms-linear-gradient(top, rgba(91,83,156,1) 0%, rgba(97,57,219,1) 48%, rgba(85,52,235,1) 51%, rgba(42,35,235,1) 100%);
+    background: linear-gradient(to bottom, rgba(91,83,156,1) 0%, rgba(97,57,219,1) 48%, rgba(85,52,235,1) 51%, rgba(42,35,235,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b539c', endColorstr='#2a23eb', GradientType=0 );
+    font-weight: bold;
+    font-family: "Tenderness","Helvetica Neue", Arial, sans-serif;
+    font-size: 1.3em;
+    text-align:center;
+}
+
+#content li ol,
+#content li ul {
+    margin-top:6px;
+}
+
+#content ol ol li:last-child {
+    margin-bottom:0;
+}
+
+#content ol ol li:last-child a {
+    text-decoration: none;
+    font-family: "Tenderness","Helvetica Neue", Arial, sans-serif;
+    font-size: 1.3em;
+}

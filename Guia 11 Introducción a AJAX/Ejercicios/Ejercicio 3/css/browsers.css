@@ -1,0 +1,203 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial,Helvetica,"Liberation Sans";
+}
+
+header {
+    background-color: rgba(200,0,0,.5) !important;
+    background-image: linear-gradient(0, rgba(250,110,90,.5) 50%, transparent 50%), 
+                      linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%)!important;
+    background-image: -webkit-linear-gradient(0, rgba(250,110,90,.5) 50%, transparent 50%), 
+                      -webkit-linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%)!important;
+    background-image: -moz-linear-gradient(0, rgba(250,110,90,.5) 50%, transparent 50%), 
+                      -moz-linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%) !important;
+    background-image: -o-linear-gradient(0, rgba(250,110,90,.5) 50%, transparent 50%),
+                      -o-linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%) !important;
+    background-size: 50px 50px!important;
+}
+
+header h1 {
+    font-family: "Anton",Helvetica,"Liberation Sans",serif;
+    font-size: 4em;
+    color: #990F0A;
+    text-align: center;
+    text-shadow: 5px 5px 0px #EEE, 7px 7px 0px #707070;
+}
+
+#cssmenu {
+  background: #f96e5b;
+  width: auto;
+}
+
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+
+#cssmenu ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+#cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+#cssmenu.align-right ul li {
+  float: right;
+}
+
+#cssmenu.align-center ul {
+  text-align: center;
+}
+
+#cssmenu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+
+#cssmenu ul li a:hover {
+  color: #333333;
+}
+
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+
+#cssmenu ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+
+#cssmenu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+
+#cssmenu ul li.active a {
+  color: #333333;
+}
+
+#cssmenu ul li.active a:before {
+  width: 100%;
+}
+
+#cssmenu.align-right li.last > a:after,
+#cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+
+#cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+    display: block;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  #cssmenu ul li.last > a,
+  #cssmenu ul li:last-child > a {
+    border: 0;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    display: none;
+  }
+}
+
+/* Estilos para el bloque de contenido */
+.browser-box {
+    padding: 16px 20px;
+}
+
+.browser-box h1 {
+    font: Bold 2em Tahoma,Helvetica,"Liberation Sans";
+    color: #930C0A;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.browser-box p {
+    font: Normal 0.9em Tahoma,Helvetica,"Liberation Sans";
+    color: Brown;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+#content img {
+    border: 2px solid #d3bfbc; 
+    -moz-box-shadow: 4px 4px 5px #b68d4c; 
+    -webkit-box-shadow: 4px 4px 5px #b68d4c; 
+    box-shadow: 4px 4px 5px #b68d4c; 
+    -moz-border-radius: 25px; 
+    -webkit-border-radius: 25px; 
+    border-radius: 25px; 
+    float: left;
+    margin: 0 15px 0 0;
+}

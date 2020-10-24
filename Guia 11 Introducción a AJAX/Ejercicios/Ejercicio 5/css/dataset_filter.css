@@ -1,0 +1,17 @@
+ul.bacon {
+	list-style-type: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+}
+
+ul.bacon li {
+	margin: 0px 0px 0px 0px;
+	padding: 2px 2px 2px 2px;
+	border: 1px solid #aaa;
+	background: #ddd;
+	width:594px;
+	height:16px;
+	color:#000;
+}
