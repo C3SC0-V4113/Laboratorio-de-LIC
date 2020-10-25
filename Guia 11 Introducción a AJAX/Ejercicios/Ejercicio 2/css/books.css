@@ -54,6 +54,7 @@ img{
     border: 4px solid #ccc;
     float: left;
     margin: 5px;
+    transition: margin 0.5s ease-out;
     -webkit-transition: margin 0.5s ease-out;
     -moz-transition: margin 0.5s ease-out;
     -o-transition: margin 0.5s ease-out;
