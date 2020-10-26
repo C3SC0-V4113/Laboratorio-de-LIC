@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda</title>
+    <link rel="stylesheet" href="css/dataset_filter.css">
+    <script src="js/dataset_filter.js"></script>
+    <script src="js/util_ajax.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Catálogo Librería</h1>
+    </header>
+    <section>
+        <article>
+            <div>
+                <input type="button" value="Cargar" onclick="get_booklist();"><br><br>
+                <input type="text" name="search" id="master" onkeyup="searchkeyup(event);"><br>
+                <div style="width: 600px; height: 30px; font-family: Arial, Helvetica, sans-serif;" id="id_title"></div>
+                <ul style="border: 1px solid #99f; width: 600px; height: 330px;" class="bacon" id="id_booklist"></ul><br>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
