@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Frameworks de JavaScript</title>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/examples.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/sections.css">
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script>
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='jquery/jquery.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+</script>
+
+	<script type="text/javascript" src="jquery/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="jquery/example.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#648CD2', '#5673A3','#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', 'lastPage'],
+				menu: '#menu'
+			});
+
+		});
+	</script>
+</head>
+<body>
+<nav id="cssmenu">
+<ul id="menu">
+    <li data-menuanchor="firstPage">
+        <a href="#firstPage">Backbone.js</a>
+    </li>
+    <li data-menuanchor="secondPage">
+        <a href="#secondPage">Angular.js</a>
+    </li>
+    <li data-menuanchor="3rdPage">
+        <a href="#3rdPage">Prototype</a>
+    </li>
+    <li data-menuanchor="4thpage">
+        <a href="#4thpage">Ext JS</a>
+    </li>
+    <li data-menuanchor="5thpage">
+        <a href="#5thpage">Ember</a>
+    </li>
+</ul>
+</nav>
+<div id="fullpage">
+    <div class="section " id="section0">
+        <h1>Backbone.js</h1>
+        <p>
+            Backbone.js es el framework preferido por muchos. En todos lados escucharás 
+            que están hablando de Backbone, muchas empresas importantes lo están utilizando. 
+            Esté framework lo conocí por primera vez hace unos 2 años cuándo trabajaba 
+            en Softtek y ahora de nueva cuenta lo estoy retomando en la empresa actual 
+            que trabajo.
+        </p>
+        <p>
+            <strong>Ventajas:</strong> La comunidad es fuerte y está creciendo bastante. 
+            Underscore.js (que se utiliza en gran medida) es también un gran framework.
+        </p>
+        <p>
+            Desventajas: Carece de abstracciones fuertes y deja mucho que desear. El framework 
+            entero es sorprendentemente ligero y da lugar a que sea repetitivo. Cuanto más 
+            grande es una aplicación, más se hace evidente.
+        </p>
+		<img src="imgs/backbone.png" alt="Backbone.JS" />
+	</div>
+	<div class="section" id="section1">
+	    <div class="slide">
+			<div class="intro">
+                <h1>Angular.js</h1>
+                <p>
+                    Angular.js es muy buen framework. Desarrollado por Googlers, tiene algunas 
+                    opciones de diseño muy interesantes.
+                </p>
+                <p>
+                    Ventajas: Muy bien pensado, con respecto a las plantillas y diseño del 
+                    controlador. Cuenta con un sistema de inyección de dependencia (soy un 
+                    gran fan de la IOC). Tiene gran soporte de UI-Binding y sin duda su sintaxis 
+                    es muy fácil de entender.
+                </p>
+                <p>
+                    Desventajas: El código base parece ser bastante extenso y no muy modular. 
+                    Las vistas no son lo suficientemente modulares.
+                </p>
+				<img src="imgs/angular.png" alt="Angular.JS" />
+			</div>
+
+		</div>
+	    <div class="slide">
+			<div class="intro">
+			    <img src="imgs/1.png" alt="Compatible" />
+			    <h1>¿Qué es Angular.JS?</h1>
+			    <p>
+                    Una tecnología nueva en la capa de cliente que nos permite realizar 
+                    cosas chachis en nuestras páginas sin necesidad de montar jaleos de 
+                    código. Separa muy bien la responsabilidad de cada tecnología en su 
+                    ámbito: CSS, HTML y Javascript, y las comunica cuando lo considera 
+                    necesario. 
+				</p>
+			</div>
+		</div>
+	    <div class="slide">
+			<div class="intro">
+                <img src="imgs/2.png" alt="simple" />
+                <h1>¿Por qué Angular.JS?</h1>
+                <p>
+                    Característica principal. No manosees el árbol DOM para acceder al valor 
+                    de un elemento.
+                </p>
+                <pre>
+                <code class="objectivec">
+                    <span class="comment">// Esto noooooo por favoooor!</span>
+                    var titulo = $(<span class="string">"#elem"</span>)
+                    <span class="variable">.up</span>
+                    (<span class="string">"li"</span>)
+                    <span class="variable">.first</span>
+                    (<span class="string">"p"</span>)
+                    <span class="variable">.down</span>
+                    (<span class="string">"span.olala"</span>)
+                    <span class="variable">.val</span>();
+                    <span class="comment">// Esto se ve mejor :)</span>
+                    var titulo = $scope<span class="variable">.titulo</span>;
+                </code>
+                </pre>
+			</div>
+		</div>
+	    <div class="slide">
+			<div class="intro">
+                <img src="imgs/3.png" alt="Cool" />
+                <h1>Vocabulario</h1>
+                <p>
+                    <strong>Scope</strong>. Es el responsable de detectar los cambios en 
+                    el modelo y proporciona el contexto a las plantillas. 
+                </p>
+                <pre>
+                <code class="objectivec">
+                    &lt;!doctype html&gt;
+                    &lt;html ng-app&gt;
+                    &lt;head&gt; ...  &lt;/head&gt;
+                    &lt;body&gt;
+                    <&lt;div ng-controller="GreetCtrl"&gt;
+                        &lt;p&gt;Hello {{name}}!&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div ng-controller="ListCtrl"&gt;
+                        &lt;ol&gt;
+                            &lt;li ng-repeat="name in names"&gt;{{name}}&lt;/li&gt;
+                        &lt;/ol&gt;
+                    &lt;/div&gt;
+                    &lt;/body&gt;
+                   &lt;/html&gt;
+                </code>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+            <h1>Prototype</h1>
+            <p>
+                Prototype es un framework que facilita el desarrollo de aplicaciones web 
+                con JavaScript y AJAX. Su autor original es Sam Stephenson, aunque las 
+                últimas versiones incorporan código e ideas de muchos otros programadores. 
+                A pesar de que incluye decenas de utilidades, la librería es compacta y 
+                está programada de forma muy eficiente.
+            </p>
+			<img src="imgs/prototype.png" alt="Prototype" />
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>Ext JS</h1>
+			<p>
+				Ext JS (pronunciado como "ekst"1 ) es una biblioteca de JavaScript para 
+				el desarrollo de aplicaciones web interactivas usando tecnologías como 
+				AJAX, DHTML y DOM. Fue desarrollada por Sencha.
+			</p>
+			<p>
+				Originalmente construida como una extensión de la biblioteca YUI por 
+				Jack Slocum, en la actualidad puede usarse como extensión para las biblioteca 
+				jQuery y Prototype. Desde la versión 1.1 puede ejecutarse como una aplicación 
+				independiente.
+			</p>
+		</div>
+		<img src="imgs/ext-js.png" alt="Ext JS" />
+	</div>
+	<div class="section" id="section4">
+        <div class="intro">
+            <h1>Ember</h1>
+            <p>
+                Nos parece que Ember.js es un framework súper interesante al que no conviene 
+                perder de vista. Se basa en una filosofía de Convention over Configuration 
+                (que traduciremos por algo equivalente a “seguir las convenciones en vez de 
+                configurar”), lo que permite al framework asumir de forma automática muchas 
+                tareas que en otros frameworks nos tocaría programar explícitamente.
+            </p>
+            <img src="imgs/ember.png" alt="Ember" />
+        </div>
+	</div>
+</div>
+</body>
+</html>

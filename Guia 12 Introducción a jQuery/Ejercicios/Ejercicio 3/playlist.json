@@ -1,0 +1,40 @@
+{"playlist":
+    [
+	{
+	    "0": {"src":"junk/Akon - Angel.mp3", "type":"audio/mp3"},
+	    "config": {
+		"title": "Akon - Angel",
+		"poster": "junk/Akon - Angel.jpg"
+	    }
+	},
+	{
+	    "0": {"src":"junk/Alexandra Stan - Saxobeat.mp3", "type":"audio/mp3"},
+	    "config": {
+		"title": "Alexandra Stan - Saxobeat",
+		"poster": "junk/Alexandra Stan - Saxobeat.jpg"
+	    }
+	},
+	{
+	    "0": {"src":"junk/Katy Perry - Firework.mp3", "type":"audio/mp3"},
+	    "config": {
+		"title": "Katy Perry - Firework",
+		"poster": "junk/Katy Perry - Firework.jpg"
+	    }
+	},
+	{
+	    "0": {"src":"junk/Maroon 5 Feat. Christina Aguilera - Move like jagger.mp3", "type":"audio/mp3"},
+	    "config": {
+		"title": "Maroon 5 Feat. Christina Aguilera - Move like jagger",
+		"poster": "junk/Maroon 5 - Moves like jagger.jpg"
+	    }
+	},
+	{
+	    "0": {"src":"junk/Rihanna - We found love.mp3", "type":"audio/mp3"},
+	    "config": {
+		"title": "Rihanna - We found love",
+		"poster": "junk/Rihanna - We found love.jpg"
+	    }
+	}
+
+    ]
+}

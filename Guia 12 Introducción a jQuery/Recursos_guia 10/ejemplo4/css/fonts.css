@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'BebasKaiRegular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/BebasKai-Regular.eot');
+    src: url('../fonts/BebasKai-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasKai-Regular.woff') format('woff'),
+         url('../fonts/BebasKai-Regular.ttf') format('truetype'),
+         url('../fonts/BebasKai-Regular.svg#BebasKaiRegular') format('svg');
+}
+
+@font-face {
+	font-family: 'HomizioNovaRegular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/HomizioNova-regular.eot');
+    src: url('../fonts/HomizioNova-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/HomizioNova-regular.woff') format('woff'),
+         url('../fonts/HomizioNova-regular.ttf') format('truetype'),
+         url('../fonts/HomizioNova-regular.svg#HomizioNovaRegular') format('svg');
+}

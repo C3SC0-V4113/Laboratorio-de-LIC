@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Speakker | Reproductor de audio</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Audioplayer from a new generation" />
+	<link rel="Shortcut Icon" type="image/ico" href="img/speakker.ico" />
+	<link rel="stylesheet" media="screen" href="css/player.css" />
+	<!-- Los scripts para utilizar speakker -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/speakker-big-1.2.24r229.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		projekktor('.projekktor');
+	});
+	</script>
+</head>
+<body>
+<div id="wrap">
+<header class="inside-plus">
+    <div id="logo">
+        <img src="junk/speakker-dark.png" alt="Speakker - A ProjekktorXL Projekkt">
+        <h1>Reproductor Speakker</h1>
+    </div>
+</header>
+<div class="inside">
+	<p>
+		Esta es una pequeña demostración de un 
+		reproductor de audio en web llamado Speakker 
+		implementado con la librería jQuery.
+		Este reproductor usa una lista de reproducción 
+		con JSON que puede verificar en el archivo 
+		<a href="playlist.json">playlist.json</a> 
+		para que puede tener una idea de cómo 
+		personalizar otra lista más	acorde a su gusto 
+		musical.
+		Puede encontrar más información sobre cómo hacer 
+		su propia lista.
+		<a href="http://www.projekktor.com/docs/playlists">aquí</a>.
+		Si desea chequear un poco la documentación de 
+		este reproductor ve a <a href="http://www.projekktor.com/docs/api">este sitio</a>.
+	</p>
+	<p>
+		Speakker es un producto de libre distribución. 
+		De modo que si te gusta lo que ves puedes hacer 
+		una: 
+		<a href="http://www.projekktor.com/donate.php">donación</a>.
+	</p>
+	<div class="separator">&nbsp;</div>
+	<!-- this is where Speakker will sit on. Note that all classes are obligatory. -->
+	<!-- "dark" can be replaced by "light" to change the color scheme -->
+	<audio class="projekktor speakker light">
+		<source src="playlist.json" type="application/json" />
+	</audio>
+	<div id="about">
+		<p class="left">
+            Speakker es un producto de last.fm-resque 
+            audio player construido sobre la base del 
+            famoso reproductor de vídeo 
+            <a href="http://www.projekktor.com" title="projekktor website">projekktor</a>.
+        </p>
+		<p class="separator">
+            &copy; 2011-2012 <a href="http://www.porkhead.org">Porkhead.org</a> 
+            &amp; <a href="http://www.spinningairwhale.com">Spinning Airwhale</a>
+        </p>
+	</div>
+</div>
+</div>
+<script src="js/noise.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+/* Sections
+ * --------------------------------------- */
+#section0 img{
+    display: block;
+    margin: 20px auto;
+}
+
+#section1 img{
+    display: block;
+    margin: 20px auto;
+}
+
+#section2 img{
+    display: block;
+    margin: 20px auto;
+}
+
+#section3 img{
+    display: block;
+    margin: 20px auto;
+}
+
+#section4 img{
+    display: block;
+    margin: 20px auto;
+}
+
+.intro p{
+    font-size: 1.5em;
+    margin: 0 auto;
+    width: 64%;
+}
+
+.twitter-share-button{
+    position: absolute;
+    right: 149px;
+    top: 9px;
+    z-index: 99;
+}
