@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Don Bosco</title>
+    <!--Primero, añadir jQuery (y jQuery UI si usamos animaciones personalizadas)-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jqueryui.min.js"></script>
+    <!--Segundo, agregar el Timer y el pluging de optimizacion-->
+    <script src="js/jquery.timers-1.2.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!--Tercero, añadir el JavaScript de GalleryView y el archivo CSS-->
+    <script src="js/jquery.galleryview-3.0-dev.js"></script>
+    <link rel="stylesheet" href="css/jquery.galleryview-3.0-dev.css">
+    <!--Por ultimo, llamamos a la funcion galleryView() en tu lista sin ordenar-->
+    <script>
+        $(function () {
+            $('#myGallery').galleryView({
+                //INT - Duracion de la transicion de panel/imagen en milisegundos
+                transition_speed: 2000,
+                //INT - Duracion entre la transicion de panel/imagen en milisegundos
+                transition_interval: 4000,
+                /*STRING - metodo "easing" usado para animaciones Jquery otorga "swing y
+                "linear", mas disponibles con JQuery UI o el plugin de optimizacion)*/
+                easing: 'swing',
+                //BOOLEAN - Indicador para mostrar u ocultar una porcion del panel de la galeria
+                show_panels: true,
+                //BOOLEAN - Indicador para mostrar u ocultar una porcion del panel de la navegacion
+                show_panel_nav: false,
+                //BOOLEAN - Indicador para mostrar u ocultar la sobreescritura de panel
+                enable_overlays: true,
+                //INT - Ancho de la galeria en pixeles
+                panel_width: 500,
+                //INT - Alto de la galeria en pixeles
+                panel_height: 313,
+                /*STRING - Metodos de animacion para las transiciones de paneles (crossfade, fade, slide, none)*/
+                panel_animation: 'slide',
+                /*STRING - Opciones de cortado de la imagen (crop = escala la imagen para que encage
+                con el aspecto de ratio determinado por elcho y alto del panel, fit = Escala la 
+                imagen manteniendo su aspecto de ratio original)*/
+                panel_scale: 'crop',
+                //STRING - Posicion de la sobrescritura del panel (bottom, top)
+                overlay_position: 'bottom',
+                //BOOLEAN - Indicador que permite al usuario para agarrar/arrastrar imagenes de tamaño grande en la galeria
+                pan_images: true,
+                pan_style: 'drag',
+                //INT - Determina la suavidad del rastreo de la animacion de paneo
+                //(Mientras más alto el numero, más suave)
+                pan_smoothness: 15,
+                //INT - index de la imagen que se mostrara primero en la galeria
+                start_frame: 1,
+                //BOOLEAN - Indicador para mostrar/ocultar la filmina de la galeria
+                show_filmstrip: true,
+                //BOOLEAN - Indicador para mostrar/ocultar los botones de navegacion
+                show_filmstrip_nav: true,
+                //BOOLEAN - Indicador para mostrar el boton de Reproducir/Pausar en la presentacion
+                enable_slideshow: false,
+                //BOOLEAN - Indicador para que se muestre la galeria en modo presentacion desde un principio
+                autoplay: false,
+                //BOOLEAN - Indicador para mostrar la descripcion de la imagen
+                show_captions: true,
+                //INT - Numero de frames para mostrar filminas entre imagenes
+                filmstrip_size: 3,
+                /*STRING - Tipo de Filmina a usar (scroll = Muestra una linea de frames,
+                desliza la filmina si es necesario, showall = Muestra distinas lineas de ser necesario)*/
+                filmstrip_style: 'scroll',
+                //STRING - Posicion de la filmina con respecto a la galeria (bottom, top, left, right)
+                filmstrip_position: 'bottom',
+                //INT - Ancho de los frames de la filmina en pixeles
+                frame_width: 96,
+                //INT - Alto de los frames de la filmina en pixeles
+                frame_height: 50,
+                //FLOAT - Transparencia de los frames no activos (1.0 = opaco, 0.0 = transparente)
+                frame_opacity: 0.5,
+                //STRING - Opcion de cortado para imagenes con filmina
+                frame_scale: 'crop',
+                //INT - Espaciado entre imagenes cubierto con filmina en pixeles
+                frame_gap: 5,
+                //BOOLEAN - Indicador para mostrar/ocultar barra de informacion
+                show_infobar: true,
+                //FLOAT - Transparencia para barra de informacion
+                infobar_opacity: 1
+            });
+        });
+    </script>
+    <style type="text/css">
+        body {
+            margin: 2em 11.2em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <article>
+            <ul id="myGallery">
+                <li>
+                    <img data-frame=" images/small/alejandrita.jpg" src="images/large/alejandra.jpg"
+                        title="Alejandra RDB" data-description="Producción
+        de programas de la Radio Don Bosco" />
+                </li>
+                <li>
+                    <img data-frame="images/small/almita.jpg" src="images/large/alma.jpg" title="Almita Burgos"
+                        data-description="Directora y jefa de la Radio Don Bosco" />
+                </li>
+                <li>
+                    <img data-frame="images/small/enfoquito.jpg" src="images/large/enfoque1100.jpg" title="Enfoque 1100"
+                        data-description="El
+        programa enfoque 1100 aborda distintos tópicos de la vida bajo la dirección de la
+        Dra. Cardoza" />
+                </li>
+                <li>
+                    <img data-frame="images/small/ilianita.jpg" src="images/large/iliana.jpg" title="Locutara de RDB"
+                        data-description="Iliana
+        Gómez es locutora de la Radio Don Bosco desde hace 3 años destacando en la locución
+        y presentación de noticias" />
+                </li>
+                <li>
+                    <img data-frame="images/small/jonathansito.jpg" src="images/large/jonathan.jpg" title="Buenos días"
+                        data-description="Un mensaje
+        positivo para empezar el día, reflexiones bajo el pensamiento de San Juan Bosco y
+        su aplicación al mundo de hoy. Se transmite todos los días a las 5:00 a.m." />
+                </li>
+                <li>
+                    <img data-frame="images/small/karlita.jpg" src="images/large/karla.jpg" title="Top 11"
+                        data-description="Cambio de lista de
+        las canciones más solicitadas durante la semana. Se transmite todos los miércoles
+        de 10:00 a 11:00 am." />
+                </li>
+                <li>
+                    <img data-frame="images/small/melissita.jpg" src="images/large/melissa.jpg"
+                        title="Tecnoinnovaciones" data-description="Es un
+        micro espacio informativo sobre detalles de lo más destacado dentro del campo
+        tecnológico y científico, tendencias de comunicación y gadget predominantes en el
+        mercado. Se trasmite de lunes a viernes a las 10:00 am y 6:00 pm." />
+                </li>
+                <li>
+                    <img data-frame="images/small/retromixito.jpg" src="images/large/retromix.jpg" title="Retromix UDB"
+                        data-description="Children
+        filled with happiness playing in the water. Brazil. (Photo and caption by Seth
+        Solo/People/National Geographic Photo Contest)" />
+                </li>
+                <li>
+                    <img data-frame="images/small/sindita.jpg" src="images/large/sindy.jpg"
+                        title="Directora de programas en RDB" data-description="Sindy está a cargo de la dirección y realización de diversos
+        programas en Radio Don Bosco desde el 2006" />
+                </li>
+                <li>
+                    <img data-frame="images/small/tecnoinnovacionsita.jpg" src="images/large/tecnoinnovaciones.jpg"
+                        title="Programa Tecnoinnovaciones" data-description="Tecnoinnovaciones es un programa en donde podrás enterarte de
+        todos las innovaciones tecnológicas que se producen a nivel mundial" />
+                </li>
+                <li>
+                    <img data-frame="images/small/trujillito.jpg" src="images/large/trujillo.jpg" title="Lic. Trujillo"
+                        data-description="El Lic.
+        Trujillo docente hora clase que imparte materias como Expresión Oral y Escrita es
+        un especialista en lengua española" />
+                </li>
+            </ul>
+        </article>
+    </section>
+</body>
+
+</html>
