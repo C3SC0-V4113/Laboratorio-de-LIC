@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de autos de carrera</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Caudex:400,400italic">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='jquery/jquery.js' type = 'text/javascript' % 3E % 3C / script % 3E"));
+        }
+    </script>
+    <script src="js/galeria.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#galeria").galeria();
+        });
+    </script>
+</head>
+
+<body>
+    <section>
+        <article>
+            <div id="galeria">
+                <img src="img/mercedes-benz.jpg" alt="Mercedes Benz W05" title="Mercedes Benz W05" />
+                <img src="img/red-bull.jpg" alt="Red Bull RB10" title="Red Bull RB10" />
+                <img src="img/williams.jpg" alt="Williams" title="Williams FW36" />
+                <img src="img/ferrari.jpg" alt="Ferrari F14 T" title="Ferrari F14 T" />
+                <img src="img/force-india.jpg" alt="Force India VJM07" title="Force India VJM07" />
+                <img src="img/mc-claren.jpg" alt="McClaren MP4-29" title="McClaren MP4-29" />
+                <img src="img/lotus.jpg" alt="Lotus E22" title="Lotus E22" />
+                <img src="img/sauber.jpg" alt="Sauber C33" title="Sauber C33" />
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>
