@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Speakker | Reproductor de audio</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Audioplayer from a new generation" />
+	<link rel="Shortcut Icon" type="image/ico" href="img/speakker.ico" />
+	<link rel="stylesheet" media="screen" href="css/player.css" />
+	<!-- Los scripts para utilizar speakker -->
+	<script src="js/jquery.min.js"></script>
+	<script>
+		var url = "js/reproductor.js";
+		$.getScript(url);
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="encabezado"></div>
+		<div class="inside">
+			<div id="entorno"></div>
+			<div class="separator">&nbsp;</div>
+			<audio class="projekktor speakker light">
+				<source src="playlist.json" type="application/json" />
+			</audio>
+			<div id="about"></div>
+		</div>
+	</div>
+	<script src="js/speakker-big-1.2.24r229.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			projekktor('.projekktor');
+		});
+	</script>
+	<script src="js/noise.js"></script>
+</body>
+
+</html>
