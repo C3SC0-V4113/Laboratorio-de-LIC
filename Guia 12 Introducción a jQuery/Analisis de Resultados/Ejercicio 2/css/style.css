@@ -1,0 +1,25 @@
+*{margin: 0;padding: 0;}
+body{font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;}
+.floor .text {color: white;font-size: 30px;font-weight: 500;text-align: center;position: absolute;top: 50%;left: 50%;-moz-transform: translateX(-50%) translateY(-50%);-webkit-transform: translateX(-50%) translateY(-50%);transform: translateX(-50%) translateY(-50%);}
+.floor-1{background: green;}
+.floor-2{background: green;}
+.floor-3{background: green;}
+.floor-4{background: #EB5D45;}
+.floor-5{background: #EB5D45;}
+.floor-6{background: #EB5D45;}
+.floor-7{background: #EB5D45;}
+.floor-8{background: #EB5D45;}
+.floor-9{background: #F9B233;}
+.floor-10{background: #F9B233;}
+ul {list-style: none;}
+li a {padding: 3px 6px; display: inline-block;background: #eee;border-radius:3px;margin-bottom:2px;color: #777;}
+li a:hover{cursor:pointer; background:#fefefe;}
+.links-to-floor{position: absolute;top: 20px;left: 20px;}
+.prev-next-links{position: absolute;top: 20px;right: 20px;}
+.direction-links li a{border-radius: 0;}
+.up {position: absolute;bottom: 75px;right: 50px;}
+.down {position: absolute;bottom: 25px;right: 50px;}
+.left {position: absolute;bottom: 50px;right: 60px;}
+.right {position: absolute;bottom: 50px;right: 32px;}
+.selected a{color: white;background:#4fade3;}
+.selected a:hover{color: white;background:#4fade3;}
