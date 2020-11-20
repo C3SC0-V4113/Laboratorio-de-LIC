@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" type="text/css" href="jquery/fullpage/fullpage.css" />
+    <link rel="stylesheet" href="jquery/Acordeon/accordion.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="jquery/Acordeon/jquery.msAccordion.js"></script>
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <h1>fullPage.js</h1>
+            <p>Continuous Scrolling Enabled</p>
+        </div>
+        <div class="section" id="section1">
+            <div class="slide" id="slide1">
+                <div class="intro">
+                    <h1>Slide 2.1</h1>
+                    <section>
+                        <article>
+                            <div class="accordionWrapper" id="accordion1">
+                                <div class="set set1">
+                                    <div class="title"><img src="img/menu1-h.jpg" width="30" height="198" /></div>
+                                    <div class="content"><img src="img/menu-img-1.jpg" width="486" height="198" /></div>
+                                </div>
+                                <div class="set set2">
+                                    <div class="title"><img src="img/menu2-h.jpg" width="30" height="198" /></div>
+                                    <div class="content"><img src="img/menu-img-2.jpg" width="486" height="198" /></div>
+                                </div>
+                                <div class="set set3">
+                                    <div class="title"><img src="img/menu3-h.jpg" width="30" height="198" /></div>
+                                    <div class="content"><img src="img/menu-img-3.jpg" width="486" height="198" />
+                                    </div>
+                                </div>
+                                <div class="set set4">
+                                    <div class="title"><img src="img/menu4-h.jpg" width="30" height="198" /></div>
+                                    <div class="content"><img src="img/menu-img-4.jpg" width="486" height="198" /><br />
+                                    </div>
+                                </div>
+                                <div class="set set5">
+                                    <div class="title"><img src="img/menu5-h.jpg" width="30" height="198" /></div>
+                                    <div class="content"><img src="img/menu-img-5.jpg" width="486" height="198" /></div>
+                                </div>
+                                <div class="set set6">
+                                    <div class="title"><img src="img/menu6-h.jpg" width="30" height="198" /></div>
+                                    <div class="content"><img src="img/menu-img-6.jpg" width="486" height="198" /></div>
+                                </div>
+                                <div class="set set7">
+                                    <div class="title"><img src="img/menu7-h.jpg" width="30" height="198" /></div>
+                                    <div class="content"><img src="img/menu-img-7.jpg" width="486" height="198" /></div>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+            <div class="slide active" id="slide2">
+                <div class="intro">
+                    <h1>Slide 2.2</h1>
+                    <p>
+                        We are using the class `active` on this section and in this particular horizontal slide. This
+                        way it will appear on the viewport on page load, instead of the 1st section 1st slide.
+                    </p>
+                    <p>You can apply the same logic to horizontal slides</p>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                <h1>Slide 2.3</h1>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <h1>Scroll Down</h1>
+                <p>And it will animate down to the first section</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="jquery/fullpage/fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+            menu: '#menu',
+            continuousVertical: false,
+            afterLoad: function (anchorLink, index) {
+                console.log("AFTER LOAD - anchorLink:" + anchorLink + " index:" + index);
+            },
+            onLeave: function (index, nextIndex, direction) {
+                console.log("ONLEAVE - index:" + index + " nextIndex:" + nextIndex + " direction:" + direction);
+            },
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#accordion1").msAccordion({ defaultid: 6, autodelay: 4 });
+        })
+    </script>
+</body>
+
+</html>
