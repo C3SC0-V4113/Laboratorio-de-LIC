@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" type="text/css" href="jquery/fullpage/fullpage.css" />
+    <link rel="stylesheet" href="jquery/Acordeon/accordion.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/musica.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="jquery/Reproductor/jquery.min.js"></script>
+    <script src="jquery/Reproductor/speakker-big-1.2.24r229.min.js"></script>
+    <script src="jquery/Acordeon/jquery.msAccordion.js"></script>
+    <script>
+        $(document).ready(function () {
+            projekktor('.projekktor');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <ul id="menu">
+            <li data-menuanchor="firstPage" class="active"><a href="#firstPage">El Cielo</a></li>
+            <li data-menuanchor="secondPage"><a href="#secondPage">Overworld</a></li>
+            <li data-menuanchor="3rdPage"><a href="#3rdPage">Cavernas</a></li>
+            <li data-menuanchor="4thPage"><a href="#4thpage">Nether</a></li>
+        </ul>
+    </div>
+
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <h1>MINECRAFT</h1>
+            <p>
+                Como redactor de mi parcial debo decir que Minecraft es probablemente uno de mis videojuegos favoritos
+                de todos los tiempos <br>
+                Es el juego que más tiempo he jugado, se mantiene actualizando e indudablemente es divertidisimo de
+                jugar
+            </p>
+        </div>
+        <div class="section" id="section1">
+            <div class="slide" id="slide1">
+                <div class="intro">
+                    <section>
+                        <article>
+                            <div id="acordeonVertical" class="accordionWrapper" style="width:486px;">
+                                <div class="set set1">
+                                    <div class="title"><img src="img/menu1.jpg" width="198" height="29" /></div>
+                                    <div class="content"><img src="img/menu-img-1.jpg" width="486" height="198" /></div>
+                                </div>
+                                <div class="set set2">
+                                    <div class="title"><img src="img/menu2.jpg" width="198" height="29" /></div>
+                                    <div class="content"><img src="img/menu-img-2.jpg" width="486" height="198" /></div>
+                                </div>
+                                <div class="set set3">
+                                    <div class="title"><img src="img/menu3.jpg" width="198" height="29" /></div>
+                                    <div class="content"><img src="img/menu-img-3.jpg" width="486" height="198" /></div>
+                                </div>
+                                <div class="set set4">
+                                    <div class="title"><img src="img/menu4.jpg" width="198" height="29" /></div>
+                                    <div class="content"><img src="img/menu-img-4.jpg" width="486" height="198" /><br />
+                                    </div>
+                                </div>
+                                <div class="set set5">
+                                    <div class="title"><img src="img/menu5.jpg" width="198" height="29" /></div>
+                                    <div class="content"><img src="img/menu-img-5.jpg" width="486" height="198" /></div>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+            <div class="slide active" id="slide2">
+                <div class="intro">
+                    <h1>DIVISOR</h1>
+                    <p>
+                        A la izquierda verás las ultimas actualizaciones de Minecraft <br>
+                        A la derecha estan algunas canciones de Minecraft(Suenan muy bajo, asi son)
+                    </p>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                <div id="container">
+                    <div id="musica">
+                        <div id="audio-image">
+                            <img class="cover" />
+                        </div>
+                        <div id="audio-player">
+                            <div id="audio-info">
+                                <span class="artist"></span> - <span class="title"></span>
+                            </div>
+                            <input id="volume" type="range" min="0" max="10" value="5" />
+                            <br>
+                            <div id="buttons">
+                                <span>
+                                    <button id="prev"></button>
+                                    <button id="play"></button>
+                                    <button id="pause"></button>
+                                    <button id="stop"></button>
+                                    <button id="next"></button>
+                                </span>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div id="tracker">
+                                <div id="progressBar">
+                                    <span id="progress"></span>
+                                </div>
+                                <span id="duration"></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <ul id="playlist" class="hidden">
+                            <li song="Volume Alpha - 18 - Sweden.mp3" cover="minesound.jpg" artist="C418">Sweden</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <h1>10 AÑOS Y SIGUE GENIAL</h1>
+                <p>
+                    Minecraft continua actualizandose año con año agregando cosas nuevas que hacen que personas nuevas jueguen y que los antiguos no se vayan <br>
+                    El juego se mantiene fresco a un buen ritmo y personas de todo el mundo lo pueden disfrutar como ellos deseen
+                </p>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="intro">
+                <h1>EXPLOSIVO</h1>
+                <p>
+                    Minecraft probablemente no sea el mejor videojuego, pero lo es para mi y para los amigos con los que juego en vacaciones y nos divertimos como niños haciendo estructuras de cubos
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="jquery/fullpage/fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#6E9AFC', '#A5CD35', '#022437', '#F1674B', '#ccddff'],
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+            menu: '#menu',
+            continuousVertical: true,
+            afterLoad: function (anchorLink, index) {
+                console.log("AFTER LOAD - anchorLink:" + anchorLink + " index:" + index);
+            },
+            onLeave: function (index, nextIndex, direction) {
+                console.log("ONLEAVE - index:" + index + " nextIndex:" + nextIndex + " direction:" + direction);
+            },
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#acordeonVertical").msAccordion({ vertical: true });
+        })
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

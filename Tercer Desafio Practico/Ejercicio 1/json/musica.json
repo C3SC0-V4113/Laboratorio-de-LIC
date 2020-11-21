@@ -1,0 +1,29 @@
+{
+    "title":"Reproductor de Musica",
+    "canciones":[
+        {
+            "Titulo":"Sweden",
+            "Artista":"C418",
+            "Cancion":"Volume Alpha - 18 - Sweden.mp3",
+            "Cover":"minesound.jpg"
+        },
+        {
+            "Titulo":"Haggstrom",
+            "Artista":"C418",
+            "Cancion":"Volume Alpha - 07 - Haggstrom.mp3",
+            "Cover":"minesound.jpg"
+        },
+        {
+            "Titulo":"Minecraft",
+            "Artista":"C418",
+            "Cancion":"Volume Alpha - 08 - Minecraft.mp3",
+            "Cover":"minesound.jpg"
+        },
+        {
+            "Titulo":"Mice on Venus",
+            "Artista":"C418",
+            "Cancion":"Volume Alpha - 11 - Mice on Venus.mp3",
+            "Cover":"minesound.jpg"
+        }
+    ]
+}

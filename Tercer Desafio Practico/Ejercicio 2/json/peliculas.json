@@ -1,0 +1,42 @@
+{
+    "title": "CINE CESQUETTA",
+    "description": "Las mejores peliculas solo en Cine Cesquetta",
+    "language": "es",
+    "items": [
+        {
+            "Titulo" : "HER",
+            "Director"  : "Spike Jonze",
+            "logo" : "img/her.jpg",
+            "Sinopsis": "Ambientada en Los Ángeles, California, en el futuro cercano, la película muestra a Theodore Twombly (Joaquin Phoenix), un hombre solitario que trabaja escribiendo cartas personales para familiares o seres queridos de personas que por alguna razón no pueden escribirlas ellas mismas. Con el corazón roto después de terminar una larga relación, se siente intrigado por un nuevo y avanzado sistema operativo, que promete ser una entidad intuitiva con cada usuario. Después de inicializarlo, Theodore queda encantado de conocer a «Samantha» (Scarlett Johansson), una brillante inteligencia artificial con voz femenina que es perspicaz, sensible y sorprendentemente atractiva. Mientras los deseos y las necesidades de ambos crecen, su amistad se va transformando en una extraña relación de amor.",
+            "Reparto": "Joaquin Phoenix como Theodore Twombly; Scarlett Johansson como Samantha (voz); Amy Adams como Amy;Rooney Mara como Catherine;Olivia Wilde como Amelia;Chris Pratt como Paul;Portia Doubleday como Isabella;Matt Letscher como Charles;Sam Jaeger como Dr; JohnsonLuka Jones como Mark Lewman;Kristen Wiig como Gatita Sexy (voz);Bill Hader como Amigo de la sala de chat #2 (voz);Spike Jonze como Niño Alien (voz);Brian Cox como Alan Watts (voz);Laura Kai Chen como Tattana"
+        },
+        {
+            "Titulo": "Sin Lugar para Debiles",
+            "Director": "Joel Coen & Ethan Coen",
+            "logo" : "img/No_es_pa_s_para_viejos-847964252-large.jpg",
+            "Sinopsis": "El cazador y veterano de Vietnam Llewelyn Moss descubre por casualidad la sangrienta escena de una carnicería entre narcos en algún lugar de la frontera entre Texas y Mexico. Entre los cuerpos y los paquetes de heroína, descubre tambien algo más de dos millones de dólares.",
+            "Reparto": "Tommy Lee Jones como Sheriff Ed Tom Bell, un lacónico sheriff del condado a punto de retirarse que sigue las pistas de Chigurh y Moss;Javier Bardem como Anton Chigurh, un asesino a sueldo contratado para recuperar el dinero perdido;Josh Brolin como Llewelyn Moss, un soldador y veterano de Vietnam que huye con dos millones de dólares relacionados al negocio de las drogas que encuentra en un campo en Texas;Woody Harrelson como Carson Wells, un cazador de recompensas y conocido de Chigurh, también contratado para recuperar el dinero;Kelly Macdonald como Carla Jean Moss, esposa de Llewelyn Moss;Garret Dillahunt como Wendell, el inexperto ayudante del sheriff Bell;Tess Harper como Loretta Bell, esposa del sheriff Bell;Barry Corbin como Ellis, un sheriff retirado, herido en cumplimiento de su deber, ahora en silla de ruedas;Beth Grant como Agnes Kracik, madre de Carla Jean y suegra de Moss;Stephen Root como El hombre que contrata a Chigurh, a Wells y a los mexicanos;Gene Jones como Thomas Thayer, el veterano propietario de una estación de servicio rural"
+        },
+        {
+            "Titulo": "Fantastico Señor Zorro",
+            "Director": "Wes Anderson",
+            "logo" : "img/srzorro.jpg",
+            "Sinopsis": "El Sr. y la Sra. Fox (George Clooney y Meryl Streep) llevan una idílica vida hogareña con su hijo Ash (Jason Schwartzman) y su joven sobrino Kristofferson (Eric Chase Anderson), que está de visita. Pero después de doce años de tranquila vida doméstica, la existencia bucólica resulta demasiado para los instintos animales del Sr. Fox. Muy pronto regresa a su vieja vida como taimado ladrón de gallinas, poniendo en peligro no solo a su amada familia, sino también a toda la comunidad animal. Atrapados bajo de la tierra, sin alimento suficiente para repartir, los animales terminan por unirse para luchar en contra de los malvados granjeros (Boggis, Bunce y Bean), quienes están determinados a capturar al audaz Sr. Fox a cualquier precio. Al final, éste utiliza sus instintos animales para salvar a su familia y a sus amigos.",
+            "Reparto": "George Clooney como Mr. Fox, un zorro rojo y ladrón de aves que ahora es un columnista de un periódico; Meryl Streep como Sra. Fox, esposa de Mr. Fox; Jason Schwartzman como Ash Fox, su hijo; Bill Murray como Tejón, el abogado de Mr.Fox que trabaja en el buffet Tejón, Castor y Castor; Willem Dafoe como Rata, una rata negra que trabaja como guardia de seguridad de Franklin Beans en su bodega secreta de sidra; Owen Wilson como Entrenador Skip, una nutria de río albina que lidera el equipo de Whack-Bat de la escuela; Adrien Brody como Rickity, un sastre campañol de pradera; Wes Anderson como Comadreja , un inteligente agente de bienes raíces que vende a Mr. Fox el hogar en la base de un árbol; Roman Coppola como Ardilla, un contratista que supervisa la modificación de la casa del árbol de Fox; Jarvis Cocker como Petey, empleado de Mr. Bean; Michael Gambon como Franklin Bean, un flaco agricultor de pavos y manzanas a quien Mr.Fox roba; Eric Anderson como Kristofferson, un zorro de plata, que es sobrino de la señora Fox"
+        },
+        {
+            "Titulo": "Roma",
+            "Director": "Alfonso Cuarón",
+            "logo" : "img/Roma-210858899-large.jpg",
+            "Sinopsis": "En la colonia Roma, de Ciudad de México, dos empleadas domésticas ayudan a una madre a criar a sus cuatro hijos durante las largas ausencias de su esposo. Una de las jóvenes, Cleo, se hace cargo de los niños como si fueran propios, a pesar de estar atravesando un momento difícil.",
+            "Reparto": "Yalitza Aparicio como Cleodegaria «Cleo» Gutiérrez, una de las empleadas de la familia; Marina de Tavira como la señora Sofía, madre de la familia; Diego Cortina Autrey como «Toño», uno de los hijos de la familia; Daniela Demesa como «Sofi», la hija de la familia; Carlos Peralta como «Paco», uno de los hijos de la familia; Marco Graf como «Pepe», uno de los hijos de la familia; Verónica García como doña Teresa, madre de Sofía; Nancy García como Adela, la otra empleada de la familia; Andy Cortés como Ignacio; Fernando Grediaga como el señor Antonio, el esposo ausente de Sofía; Jorge Antonio Guerrero como Fermín, el novio de Cleo; José Manuel Guerrero Mendoza como Ramón, el novio de Adela; Latin Lover como el Profesor Zovek;​ Zarela Lizbeth Chinolla Arellano como la doctora Vélez; Daniel Valtierra como promotor político; Enoc Leaño como el político"
+        },
+        {
+            "Titulo": "Los 8 más odiados",
+            "Director": "Quentin Tarantino",
+            "logo" : "img/los8.jpg",
+            "Sinopsis": "Wyoming, poco después de acabar la Guerra Civil estadounidense. Un cazarrecompensas, su preso, otro cazarrecompensas y un supuesto sheriff quedan atrapados junto a cuatro desconocidos en una fonda durante una tormenta de nieve. Entre los ocho individuos hay viejas cuentas pendientes que saldar, y probablemente cuando pase la tormenta no todos saldrán con vida del edificio",
+            "Reparto": "Samuel L. Jackson como el mayor Marquis Warren, el Cazarrecompensas; Kurt Russell como John Ruth, la Horca; Jennifer Jason Leigh como Daisy Domergue, la prisionera; Walton Goggins como Chris Mannix, el sheriff; Demián Bichir como Bob, el mexicano; Tim Roth como Oswaldo Mobray, el verdugo; Michael Madsen como Joe Gage, el vaquero; Bruce Dern como el general Sandford Smithers, el confederado"
+        }
+    ]
+}
